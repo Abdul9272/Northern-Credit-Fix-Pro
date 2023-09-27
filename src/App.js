@@ -17,15 +17,16 @@ import Navbar from './components/Navbar';
 // import { Redirect } from 'react-router-dom';
 import Services from './components/Services'
 import Home1 from './components/Home1';
+import SignIn_Up from './components/Signin_up';
 
 function App()
 {
-  return(
-     <div className="App0">
-      <Navbar/>
-          {/* <Form/> */}
+  return (
+    <div className="App0">
+      <Navbar />
+      {/* <Form/> */}
       {/* <Router>  */}
-         {/* <Link to="/home">Home Page</Link>
+      {/* <Link to="/home">Home Page</Link>
         <br/>
         <Link to="/about">About Page</Link>
         <br/>
@@ -33,30 +34,44 @@ function App()
         <br/>
         <Link to="/templates">Templates Page</Link>  */}
 
+      <Switch>
+        <Route path="/home">
+          {" "}
+          <Home />{" "}
+        </Route>
+        <Route path="/home1">
+          {" "}
+          <Home1 />{" "}
+        </Route>
+        <Route path="/services">
+          {" "}
+          <Services />{" "}
+        </Route>
+        <Route path="/about">
+          {" "}
+          <About />{" "}
+        </Route>
+        <Route path="/contact">
+          {" "}
+          <Contact />{" "}
+        </Route>
+        <Route path="/templates">
+          {" "}
+          <Templates />{" "}
+        </Route>
+        <Route path="/sign-up">
+          {" "}
+          <SignIn_Up />{" "}
+        </Route>
+        <Route path="*">
+          {" "}
+          <Page404 />{" "}
+        </Route>
+      </Switch>
 
-        <Switch>
-        <Route path='/home'> <Home/> </Route>
-        <Route path='/home1'> <Home1/> </Route>
-        <Route path='/services'> <Services/> </Route>
-        <Route path= "/about">  <About/> </Route>
-        <Route path= "/contact">  <Contact/> </Route>
-        <Route path= "/templates">  <Templates/> </Route>
-        <Route path= "*">  <Page404/> </Route>
-
-        </Switch> 
-        
-        
-       {/* </Router> */}
+      {/* </Router> */}
     </div>
-
-
-
-
-
-        
-     
-
-    )
+  );
 
 }
 

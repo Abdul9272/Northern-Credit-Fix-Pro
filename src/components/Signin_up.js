@@ -1,110 +1,122 @@
 import React, { useState } from "react";
 import "./style.css";
-import pic1 from './img/register.svg';
-import pic2 from './img/log.svg';
+import reg from './img/register.svg';
+import log from './img/log.svg';
 
-function Form() {
-  const [log,setlog] = useState("");
-  const [sign,setsign] = useState("");
+const SignIn_Up = () => {
+  const [isSignUpMode, setIsSignUpMode] = useState(false);
 
-  function sign_up_mode(){
-    <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
+  const toggleMode = () => {
+    setIsSignUpMode(!isSignUpMode);
+  };
+  return (
+    <div className={`container ${isSignUpMode ? "sign-up-mode" : ""}`}>
+      <div className="forms-container">
+        <div className="signin-signup">
+          <form action="#" className="sign-in-form">
+            <h2 className="title">Sign In</h2>
+            <div className="input-field">
+              <i className="fas fa-user"></i>
               <input type="text" placeholder="Username" />
             </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
+            <div className="input-field">
+              <i className="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+            <input type="submit" value="Login" className="btn solid" />
+            <br />
+            <p className="social-text">Or Sign in with social platforms</p>
+            <div className="social-media">
+              <a href="/" className="social-icon">
+                <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
+              <a href="/" className="social-icon">
+                <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
+              <a href="/" className="social-icon">
+                <i className="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="/" className="social-icon">
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </form>
-  }
-
-  return (
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
+          <form action="#" className="sign-up-form">
+            <h2 className="title">Sign Up</h2>
+            <div className="input-field">
+              <i className="fas fa-user"></i>
               <input type="text" placeholder="Username" />
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
+            <div className="input-field">
+              <i className="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div className="input-field">
+              <i className="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+            <input type="submit" className="btn" value="Sign up" />
+            {/* <hr /> */}
+            <p className="social-text">Or Sign up with social platforms</p>
+            <div className="social-media">
+              <a href="/" className="social-icon">
+                <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
+              <a href="/" className="social-icon">
+                <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
+              <a href="/" className="social-icon">
+                <i className="fab fa-google"></i>
               </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="/" className="social-icon">
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </form>
         </div>
       </div>
 
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
+      <div className="panels-container">
+        <div className="panel left-panel">
+          <div className="content">
             <h3>New here ?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+              Ready to get started? Sign up now and unlock a world of
+              possibilities.
             </p>
-            <button onClick={()=>setsign(sign_up_mode())} class="btn transparent" id="sign-up-btn">
+            <button
+              className={
+                isSignUpMode ? "btn transparent active" : "btn transparent"
+              }
+              id="sign-up-btn"
+              onClick={toggleMode}
+            >
               Sign up
             </button>
           </div>
-          <img src={pic2} class="image" alt="" />
+          <img src={log} className="image" alt="" />
         </div>
-        <div class="panel right-panel">
-          <div class="content">
+        <div className="panel right-panel">
+          <div className="content">
             <h3>One of us ?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
+              Sign in and let the fun begin. We're thrilled to have you here!
             </p>
-            <button class="btn transparent" id="sign-in-btn">
+            <button
+              className={
+                !isSignUpMode ? "btn transparent active" : "btn transparent"
+              }
+              id="sign-in-btn"
+              onClick={toggleMode}
+            >
               Sign in
             </button>
           </div>
-          <img src={pic1} class="image" alt="" />
+          <img src={reg} className="image" alt="" />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Form;
+export default SignIn_Up;

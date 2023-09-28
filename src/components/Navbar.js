@@ -4,10 +4,9 @@ import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 function Navbar() {
   return (
-    
-      <div className="container-fluid nav_bg">
-        <div className='row'>
-          <div className="col-10 mx-auto">
+    <div className="container-fluid nav_bg">
+      <div className="row">
+        <div className="col-10 mx-auto">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -27,26 +26,43 @@ function Navbar() {
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <Link activeClassName='menu-active'  exact class="nav-link active" aria-current="page"  to="/home">
+                    <Link
+                      activeClassName="menu-active"
+                      exact
+                      class="nav-link active"
+                      aria-current="page"
+                      to="/home"
+                    >
                       Home
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <Link activeClassName='menu-active' class="nav-link" to="/services">
+                    <Link
+                      activeClassName="menu-active"
+                      class="nav-link"
+                      to="/services"
+                    >
                       Services
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <Link activeClassName='menu-active' class="nav-link" to="/about">
+                    <Link
+                      activeClassName="menu-active"
+                      class="nav-link"
+                      to="/about"
+                    >
                       About
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <Link activeClassName='menu-active' class="nav-link" to="/contact">
+                    <Link
+                      activeClassName="menu-active"
+                      class="nav-link"
+                      to="/contact"
+                    >
                       Contact
                     </Link>
                   </li>
-                 
 
                   <li class="nav-item dropdown">
                     <Link
@@ -80,15 +96,22 @@ function Navbar() {
                       </li>
                     </ul>
                   </li>
-                  
+                  <li class="nav-item">
+                    <Link
+                      activeClassName="menu-active"
+                      class="nav-link"
+                      to="/sign-up"
+                    >
+                      Sign-Up/Log-In
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
           </nav>
-          </div>
         </div>
       </div>
-    
+    </div>
   );
 }
 

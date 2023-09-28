@@ -5,13 +5,15 @@ import web from "./img/log.svg";
 import Common from "./common";
 function Home() {
   return (
+    <div>
     <Common
     name="Grow your business with"
     imgscr={web}
     visit="/home1"
     btname="Get Started"
     />
-  );
+    </div>
+  )
 }
 
 export default Home;

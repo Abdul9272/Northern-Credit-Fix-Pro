@@ -17,11 +17,13 @@ import Navbar from './components/Navbar';
 // import { Redirect } from 'react-router-dom';
 import Services from './components/Services'
 import Home1 from './components/Home1';
+import Footer from './components/Footers';
 
 function App()
 {
   return(
-     <div className="App0">
+    <>
+     <div className="App">
       <Navbar/>
           {/* <Form/> */}
       {/* <Router>  */}
@@ -46,8 +48,10 @@ function App()
         </Switch> 
         
         
-       {/* </Router> */}
+     
     </div>
+       <Footer/>
+    </>
 
 
 

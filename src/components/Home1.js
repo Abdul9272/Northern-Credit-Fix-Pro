@@ -6,6 +6,8 @@ import web from "./img/log.svg";
 import web1 from "./img/maxresdefault.jpg";
 import Common from "./common";
 import Card from "./Card";
+import Sdata from "./Sdata";
+
 function Home1() {
   return (
     <>
@@ -107,12 +109,15 @@ function Home1() {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+            {
+              Sdata.map((val,ind)=>
+              {
+                return <Card key = {ind}
+                imgscr = {val.imgscr}
+                title = {val.title}
+                />
+              })
+             }
           
             </div>
             <div className="mt-3">

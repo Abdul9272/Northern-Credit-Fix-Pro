@@ -18,6 +18,7 @@ import Navbar from './components/Navbar';
 import Services from './components/Services'
 import Home1 from './components/Home1';
 import Footer from './components/Footers';
+import SignIn_Up from './components/Signin_up';
 
 function App()
 {
@@ -51,6 +52,7 @@ function App()
      
     </div>
        <Footer/>
+       {/* <SignIn_Up/> */}
     </>
 
 

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import './style1.css';
 import "bootstrap/dist/js/bootstrap.bundle";
-import web from "./img/log.svg";
+// import web from "./img/log.svg";
 import web1 from "./img/maxresdefault.jpg";
-import Common from "./common";
+// import Common from "./common";
 import Card from "./Card";
 import Sdata from "./Sdata";
 

@@ -1,6 +1,6 @@
 import React from "react";
 // import web from "./img/abc.avif";
-import web from "./img/images.jpeg";
+// import web from "./img/images.jpeg";
 import { Link } from "react-router-dom";
 
 function Card(props) {

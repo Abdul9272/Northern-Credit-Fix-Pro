@@ -1,19 +1,19 @@
-import './style1.css'
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import "./style1.css";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="container-fluid nav_bg">
       <div className="row">
         <div className="col-10 mx-auto">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container-fluid">
+              <a className="navbar-brand" href="/">
                 THEMEZONE
               </a>
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -21,52 +21,55 @@ function Navbar() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li className="nav-item">
                     <Link
                       activeClassName="menu-active"
                       exact
-                      class="nav-link active"
+                      className="nav-link active"
                       aria-current="page"
                       to="/home"
                     >
                       Home
                     </Link>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <Link
                       activeClassName="menu-active"
-                      class="nav-link"
+                      className="nav-link"
                       to="/services"
                     >
                       Services
                     </Link>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <Link
                       activeClassName="menu-active"
-                      class="nav-link"
+                      className="nav-link"
                       to="/about"
                     >
                       About
                     </Link>
                   </li>
-                  <li class="nav-item">
+                  <li className="nav-item">
                     <Link
                       activeClassName="menu-active"
-                      class="nav-link"
+                      className="nav-link"
                       to="/contact"
                     >
                       Contact
                     </Link>
                   </li>
 
-                  <li class="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle"
                       to="#"
                       id="navbarDropdown"
                       role="button"
@@ -75,36 +78,39 @@ function Navbar() {
                     >
                       Templates
                     </Link>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul
+                      className="dropdown-menu"
+                      aria-labelledby="navbarDropdown"
+                    >
                       <li>
-                        <Link class="dropdown-item" to="templates">
+                        <Link className="dropdown-item" to="templates">
                           Blogs
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="#">
+                        <Link className="dropdown-item" to="#">
                           Business Templates
                         </Link>
                       </li>
                       <li>
-                        <hr class="dropdown-divider" />
+                        <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="#">
+                        <Link className="dropdown-item" to="#">
                           Other
                         </Link>
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item">
+                  {/* <li className="nav-item">
                     <Link
                       activeClassName="menu-active"
-                      class="nav-link"
+                      className="nav-link"
                       to="/sign-up"
                     >
                       Sign-Up/Log-In
-                    </Link>
-                  </li>
+                    </Link> */}
+                  {/* </li> */}
                 </ul>
               </div>
             </div>

@@ -1,3 +1,29 @@
+
+.card-img-top{
+  
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.card{
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    color: #fff;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.card:hover{
+    border-color: var(--color-primary-variant);
+    /* background: transparent; */
+     transform: scale(1.09);
+}
+.card-title{
+  text-align: center;
+}
+.btn{
+  border-radius: 2rem;
+}
 .Footer {
   padding: 2rem 0;
   margin-top: 15rem;
@@ -31,16 +57,17 @@
 }
 
 .footer-icons i:hover {
-  color: #4481eb;
+ color: #4481eb;
   border-color: #4481eb;
   transition: 0.6s;
   cursor: pointer;
 }
 
+
 .ft-2 ul {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
   list-style: none;
   padding-left: 0;
 }
@@ -55,8 +82,8 @@
   color: #fff;
   font-size: 1.06rem;
 }
-.ft-2 ul a:hover {
-  color: #4481eb;
+.ft-2 ul a:hover{
+    color: #4481eb;
 }
 
 .ft-3 p {

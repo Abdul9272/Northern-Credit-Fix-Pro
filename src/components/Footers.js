@@ -42,7 +42,7 @@ function Footers() {
         </div>
       </div>
       <div className="Last-footer">
-        <p>&copy; 2023 All rights are reserved by themezone.com</p>
+        <p>2023 &copy; All rights are reserved by themezone.com</p>
       </div>
     </>
   );

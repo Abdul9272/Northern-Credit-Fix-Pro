@@ -19,16 +19,16 @@ function Footers() {
             <div className="col-md-6 col-lg-3 col-12 ft-2 ml-auto">
               <ul>
                 <li className="nav-item">
-                  <a href="/home">Home</a>
+                  <a href="/home">Home |</a>
                 </li>
                 <li className="nav-item">
-                  <a href="/services">Services</a>
+                  <a href="/services">Services |</a>
                 </li>
                 <li className="nav-item">
-                  <a href="/about">About</a>
+                  <a href="/about">About |</a>
                 </li>
                 <li className="nav-item">
-                  <a href="/contact">Contact</a>
+                  <a href="/contact">Contact </a>
                 </li>
               </ul>
               <div className="footer-icons">

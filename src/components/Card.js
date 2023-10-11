@@ -8,7 +8,7 @@ function Card(props) {
   return (
     <>
       <div className="col-md-4 col-10 mx-auto">
-        <div className="card" style={{ height: "420px", overflow: "hidden" }}>
+        <div className="card" style={{ height: "440px", overflow: "hidden" }}>
           <img
             src={props.imgscr}
             className="card-img-top"

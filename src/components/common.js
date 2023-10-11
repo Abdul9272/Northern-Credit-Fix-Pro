@@ -3,7 +3,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
 // import web from "./img/log.svg";
-
+import './style1.css';
 function    Common(props) {
   return (
     <section id="header" className="d-flex align-items-center">

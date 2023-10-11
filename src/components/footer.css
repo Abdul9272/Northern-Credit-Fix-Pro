@@ -8,15 +8,15 @@
 .card{
     background: var(--color-bg-variant);
     padding: 1.3rem;
-    color: #fff;
-    border-radius: 2rem;
+    color: white;
+    border-radius: 1rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
 .card:hover{
-    border-color: var(--color-primary-variant);
+    border-color: var(--color-bg);
     /* background: transparent; */
-     transform: scale(1.09);
+     transform: scale(1.05);
 }
 .card-title{
   text-align: center;
@@ -25,8 +25,8 @@
   border-radius: 2rem;
 }
 .Footer {
-  padding: 2rem 0;
-  margin-top: 15rem;
+  padding: 0;
+  margin: 0;
   background-color: rgb(26, 29, 206);
 }
 

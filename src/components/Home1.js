@@ -1,18 +1,25 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
-// import './style1.css';
+import "../App.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-// import web from "./img/log.svg";
-import web1 from "./img/maxresdefault.jpg";
-// import Common from "./common";
+
+import ImageSlider from "./ImageSlider";
+import { SliderData } from "./SliderData";
 import Card from "./Card";
 import Sdata from "./Sdata";
 
 function Home1() {
+  const handleReadMoreClick = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
+    // console.log("Button is Clicked");
+  };
   return (
     <>
-      <div className="container-fluid nav_bg">
+      {/* <div className="container-fluid nav_bg">
         <div className="row">
           <div className="col-10 mx-auto">
             <div
@@ -101,22 +108,30 @@ function Home1() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <ImageSlider slides={SliderData} />
+
       <br />
 
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {Sdata.map((val, ind) => {
-                return <Card key={ind} imgscr={val.imgscr} title={val.title} des={val.des}/>;
+              {Sdata.slice(0, 6).map((val, ind) => {
+                return (
+                  <Card
+                    key={ind}
+                    imgscr={val.imgscr}
+                    title={val.title}
+                    des={val.des}
+                  />
+                );
               })}
             </div>
             <div className="mt-5 d-grid gap-2 col-md-6 mx-auto">
-              <Link to="/services" className="btn btn-primary">
+              <button className="btn btn-primary" onClick={handleReadMoreClick}>
                 Read More
-              </Link>
-              
+              </button>
             </div>
           </div>
         </div>

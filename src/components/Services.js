@@ -6,7 +6,7 @@ import Card from "./Card";
 function Services() {
   return (
     <>
-      <div className="my-5">
+      <div className="my-5 " id="services">
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
           Our Services
         </h1>

@@ -16,15 +16,16 @@ function Services() {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-             {
-              Sdata.map((val,ind)=>
-              {
-                return <Card key = {ind}
-                imgscr = {val.imgscr}
-                title = {val.title}
-                />
-              })
-             }
+              {Sdata.map((val, ind) => {
+                return (
+                  <Card
+                    key={ind}
+                    imgscr={val.imgscr}
+                    title={val.title}
+                    des={val.des}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

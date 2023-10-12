@@ -1,8 +1,73 @@
+<<<<<<< HEAD
+body {
+  /* background-image: url('../src/components/img/bg-texture.png'); */
+  background-color: #fff; /* Set your background color here */
+  color: black;
+  line-height: 1.7;
+}
+/* style.css */
+.active-link {
+  color: black; /* Set your desired color for the active link */
+  /* Add any other styles for the active link */
+=======
 
 .App {
   text-align: center;
+>>>>>>> origin/main
+}
+html {
+  scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
+/* Image Slider */
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+=======
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,4 +101,5 @@
   to {
     transform: rotate(360deg);
   }
+>>>>>>> origin/main
 }

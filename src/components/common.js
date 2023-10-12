@@ -2,8 +2,8 @@
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import web from "./img/log.svg";
-
+// import web from "./img/log.svg";
+import './style1.css';
 function    Common(props) {
   return (
     <section id="header" className="d-flex align-items-center">
@@ -23,7 +23,7 @@ function    Common(props) {
                    built Templates
                 </h3>
                 <div className="mt-3">
-                  {/* <button class="btn btn-outline-primary">Primary</button> */}
+                  {/* <button className="btn btn-outline-primary">Primary</button> */}
                   <Link to={props.visit} className="btn-get-started" >
                       {props.btname}
                   </Link>

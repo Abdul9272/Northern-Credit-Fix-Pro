@@ -1,15 +1,15 @@
 import a from './img/1.jpg';
 import b from './img/2.jpg';
-import c from './img/3.jpeg';
-import d from './img/4.jpeg';
-import e from './img/5.jpeg';
-import f from './img/images.jpeg';
-import g from './img/7.jpeg';
-import h from './img/8.jpeg';
-import j from './img/9.jpeg';
-import k from './img/10.jpeg';
-import l from './img/11.jpeg';
-import m from './img/12.jpeg';
+import c from './img/3.jpg';
+import d from './img/4.jpg';
+import e from './img/5.jpg';
+import f from './img/6.jpg';
+import g from './img/7.jpg';
+import h from './img/8.jpg';
+import j from './img/9.jpg';
+import k from './img/10.jpg';
+import l from './img/11.jpg';
+import m from './img/12.jpg';
 
 
 
@@ -19,52 +19,64 @@ import m from './img/12.jpeg';
 const Sdata = [
   {
     imgscr: a,
-    title : "web development"
+    title: "Finexo",
+    des: "Finexo is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: b,
-    title : "app development"
+    title: "Listrace",
+    des: "Listrace is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: c,
-    title : "software development"
+    title: "Inance",
+    des: "Inance is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: d,
-    title : "android development"
+    title: "Mediplus Lite",
+    des: "Mediplus Lite is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: e,
-    title : "ML development"
+    title: "Spering",
+    des: "Spering is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: f,
-    title : "AI development"
+    title: "Little Fashion",
+    des: "Little Fashion is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: g,
-    title : "Didital Marketing"
+    title: "Browny",
+    des: "Browny is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: h,
-    title : "Flutter Developer"
+    title: "Klinik",
+    des: "Klinik is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: j,
-    title : "Window development"
+    title: "Sbs",
+    des: "Sbs is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: k,
-    title : "React developer"
+    title: "App Light",
+    des: "App Light is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: l,
-    title : "Next developer"
+    title: "Gaurder",
+    des: "Gaurder is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: m,
-    title : "Node"
-  }
-]
+    title: "Healet",
+    des: "Healet is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+  },
+];
 
 export default Sdata;

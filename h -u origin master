@@ -1,0 +1,45 @@
+[33mcommit 711c65f22191e709bccd0f3e717e911fc8a0f06e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Abdul Rehman <hafizabdulrehman9272@gmail.com>
+Date:   Thu Oct 12 21:39:16 2023 +0500
+
+    More Functionality Added
+
+[33mcommit b6099f154934c49d47b124f5f61f11a12a4a0228[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 51b015c 7d2563e
+Author: Abdul Rehman <hafizabdulrehman9272@gmail.com>
+Date:   Thu Sep 28 23:27:08 2023 +0500
+
+    Functionality added
+
+[33mcommit 51b015c45628c287fdd4e3e9a1cb4e021727a9b8[m
+Author: Abdul Rehman <hafizabdulrehman9272@gmail.com>
+Date:   Thu Sep 28 23:06:12 2023 +0500
+
+    Services page added
+
+[33mcommit 7d2563e2e2edcf9cf515fb387549a36b51980040[m
+Merge: 360af12 5160409
+Author: Abdul Rehman <97548920+Abdul9272@users.noreply.github.com>
+Date:   Thu Sep 28 21:57:05 2023 +0500
+
+    Merge pull request #1 from Huzzifa787/main
+    
+    Sign-up/Sign-In Issue Resolved
+
+[33mcommit 5160409a99b7692f4c12c53c0df9dde98f64187e[m
+Author: Muhammad Huzzifa <2020CS606@student.uet.edu.pk>
+Date:   Wed Sep 27 15:05:27 2023 +0500
+
+    Sign-up/Sign-In Issue Resolved
+
+[33mcommit 360af12d009da9057683acd3e642206a5c6d4edb[m
+Author: Abdul Rehman <hafizabdulrehman9272@gmail.com>
+Date:   Mon Sep 25 21:32:14 2023 +0500
+
+    my first commit
+
+[33mcommit 04f6da49a1b087121ff9eba51e77c6fa671096cd[m
+Author: kimo <tongmai4@gmail.com>
+Date:   Sat Jan 21 00:31:34 2023 +0100
+
+    Initialize project using Create React App

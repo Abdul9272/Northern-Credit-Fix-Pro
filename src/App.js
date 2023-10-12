@@ -25,6 +25,7 @@ function App()
   return(
     <>
      <div className="App">
+    {/* <SignIn_Up/> */}
       <Navbar/>
           {/* <Form/> */}
       {/* <Router>  */}
@@ -52,7 +53,6 @@ function App()
      
     </div>
        <Footer/>
-       {/* <SignIn_Up/> */}
     </>
 
 

@@ -20,7 +20,6 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-
 .container {
   position: relative;
   width: 100%;
@@ -408,5 +407,3 @@ form.sign-in-form {
     left: 50%;
   }
 }
-
-

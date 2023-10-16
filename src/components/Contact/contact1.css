@@ -1,0 +1,45 @@
+
+
+.header-img {
+  text-align: right;
+  width: 600px;
+}
+
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.rows{
+  display: flex;
+  float: left;
+  font-weight: lighter;
+  font-size:x-large;
+  
+
+}
+.center{
+/* margin: 10px 0px 100px 400px; */
+padding: 10px 10px 100px 400px;
+
+
+}
+.img-fluids{
+  margin-left: 50px;
+}

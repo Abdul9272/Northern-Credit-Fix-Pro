@@ -1,68 +1,120 @@
-import logo from './logo.svg';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-// import './App.css';
+// import logo from './logo.svg';
 
-
-import {Link, Route} from 'react-router-dom'
-import {BrowserRouter as Router,} from 'react-router-dom'
+import React from 'react';
+import {Route} from 'react-router-dom'
 import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
-import Home from './components/Home'
-import About from './components/About'
-import Contact from './components/Contact'
-import Templates from './components/Templates'
-import Page404 from './components/Page404';
-import Form from './components/Signin_up';
-import Navbar from './components/Navbar';
-// import { Redirect } from 'react-router-dom';
-import Services from './components/Services'
-import Home1 from './components/Home1';
-import Footer from './components/Footers';
-import SignIn_Up from './components/Signin_up';
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Contact from './components/Contact/Contact'
+import Templates from './components/Categories/Templates'
+import Page404 from './components/404/Page404';
+import Navbar from './components/Navbar/Navbar';
+import Services from './components/Services/Services'
+import Home1 from './components/Home/Home1';
+import './App.css'
+import Signup from './components/Sign-up/Signin_up';
+import Footers from './components/Footer/Footers';
+import Business from './components/Categories/Business';
+import Education from './components/Categories/Education';
+import Food from './components/Categories/Food';
+import Tourist from './components/Categories/Tourest';
+import Little_Fashion from './components/Categories/Little_Fashion';
+import AI from './components/AI/AI';
+import Submit from './components/Submit_Template/Submit';
+import Jobs from './components/Categories/Jobs';
+import Tourest from './components/Categories/Tourest';
+import Browny from './components/Categories/Browny';
+import Klinik from './components/Categories/Klinik';
+import Sbs from './components/Categories/Sbs';
+import App_light from './components/Categories/App_light';
+import Gaurder from './components/Categories/Gaurder';
+import Healet from './components/Categories/Healet';
+
 
 function App()
 {
-  return(
+   
+  return (
     <>
-     <div className="App">
-    {/* <SignIn_Up/> */}
-      <Navbar/>
-          {/* <Form/> */}
-      {/* <Router>  */}
-         {/* <Link to="/home">Home Page</Link>
-        <br/>
-        <Link to="/about">About Page</Link>
-        <br/>
-        <Link to="/contact">Contact Page</Link>
-        <br/>
-        <Link to="/templates">Templates Page</Link>  */}
-
-
+      <div className="App">
+        {/* <Signup/> */}
+        <Navbar />
         <Switch>
-        <Route path='/home'> <Home/> </Route>
-        <Route path='/home1'> <Home1/> </Route>
-        <Route path='/services'> <Services/> </Route>
-        <Route path= "/about">  <About/> </Route>
-        <Route path= "/contact">  <Contact/> </Route>
-        <Route path= "/templates">  <Templates/> </Route>
-        <Route path= "*">  <Page404/> </Route>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/home1">
+            <Home1 />
+          </Route>
+          <Route exact path="/services">
+            <Services />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/templates">
+            <Templates />
+          </Route>
+          <Route exact path="/business">
+            <Business />
+          </Route>
+          <Route exact path="/education">
+            <Education />
+          </Route>
+          <Route exact path="/food">
+            <Food />
+          </Route>
+          <Route exact path="/tourest">
+            <Tourest />
+          </Route>
+          <Route exact path="/little_fashion">
+            <Little_Fashion />
+          </Route>
+          <Route exact path="/other">
+            <Templates />
+          </Route>
+          <Route exact path="/ai">
+            <AI />
+          </Route>
+          <Route exact path="/submit">
+            <Submit />
+          </Route>
+          <Route exact path="/service">
+            <Services />
+          </Route>
+          <Route exact path="/jobs">
+            <Jobs />
+          </Route>
+          <Route exact path="/browny">
+            <Browny />
+          </Route>
+          <Route exact path="/klinik">
+            <Klinik />
+          </Route>
+          <Route exact path="/sbs">
+            <Sbs />
+          </Route>
+          <Route exact path="/app_light">
+            <App_light />
+          </Route>
+          <Route exact path="/gaurder">
+            <Gaurder />
+          </Route>
+          <Route exact path="/healet">
+            <Healet />
+          </Route>
+          <Route exact path="*">
+            <Page404 />
+          </Route>
+        </Switch>
+      </div>
 
-        </Switch> 
-        
-        
-     
-    </div>
-       <Footer/>
+      <Footers />
     </>
-
-
-
-
-
-        
-     
-
-    )
+  );
 
 }
 

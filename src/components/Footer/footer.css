@@ -1,0 +1,89 @@
+@import "~font-awesome/css/font-awesome.css";
+
+.Footer {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(26, 29, 206);
+}
+
+.ft-1 h3 {
+  font-weight: 700;
+  font-family: cursive;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+}
+
+.ft-1 span {
+  color: #3498db;
+}
+
+.ft-1 p {
+  padding: 0rem 5rem 0.8rem 0;
+  font-weight: 500;
+  color: #fff;
+  text-align: justify;
+}
+
+.footer-icons i {
+  padding: 0.4rem 0.5rem;
+  background: #e1e1e1;
+  color: #333;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0px 0px 0px 25px;
+}
+
+.footer-icons i:hover {
+ color: #4481eb;
+ size: 50px;
+  border-color: #4481eb;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+
+.ft-2 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-2 ul li {
+  padding: 0.35rem 0;
+  font-weight: 500;
+}
+
+.ft-2 ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.06rem;
+}
+.ft-2 ul a:hover{
+    color: #4481eb;
+}
+
+.ft-3 p {
+  font-weight: 500;
+  padding: 0.1rem 0;
+  font-size: 1.06rem;
+}
+
+.ft-3 i {
+  padding-right: 0.5rem;
+}
+
+.Last-footer {
+  background: #242424;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.Last-footer p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}

@@ -1,0 +1,60 @@
+.navbar {
+  background-color: black !important;
+}
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: white;
+  /* color: rgb(26, 29, 206) !important; */
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.navbar a:hover{
+    color: white;
+}
+.navbar .nav-link.active {
+  color: white;
+}
+.navbar .dropdown-toggle.active {
+  color: white;
+}
+
+.navbar li a {
+  font-size: 1.3rem !important;
+  color: #1590af ;
+  text-transform: capitalize;
+}
+/* .navbar a:active {
+  color: #4b15af  ;
+} */
+/* .nav-item > .active{
+  color: blue;
+} */
+.menu-active {
+  font-weight: bold !important;
+  border-bottom: 1px solid rgb(204, 22, 22) ;
+  color: white;
+}
+.my-3 {
+  
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mt-3 {
+  
+  font-family: "Times New Roman", Times, serif;
+}
+/* Navbar styles */
+
+/* Styling the dropdown items on hover */
+.dropdown-menu.custom-bg li a.dropdown-item:hover {
+  background-color: black; /* Background color when hovering */
+  color: white; /* Text color when hovering */
+}
+
+/* Add more styles as needed */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}

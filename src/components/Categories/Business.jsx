@@ -4,7 +4,7 @@ import Card from "../Services/Card";
 
 function Business() {
   const HRef = useRef();
-
+  
   useEffect(() => {
     HRef.current.scrollIntoView(0);
   }, []);

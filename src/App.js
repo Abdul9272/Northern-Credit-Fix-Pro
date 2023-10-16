@@ -1,36 +1,39 @@
 // import logo from './logo.svg';
 
-import React from "react";
-import { Route } from "react-router-dom";
-import { Switch } from "react-router-dom/cjs/react-router-dom.min";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Templates from "./components/Categories/Templates";
-import Page404 from "./components/404/Page404";
-import Navbar from "./components/Navbar/Navbar";
-import Services from "./components/Services/Services";
-import Home1 from "./components/Home/Home1";
-import "./App.css";
-import Signup from "./components/Sign-up/Signin_up";
-import Footers from "./components/Footer/Footers";
-import Business from "./components/Categories/Business";
-import Education from "./components/Categories/Education";
-import Food from "./components/Categories/Food";
-import Tourist from "./components/Categories/Tourest";
-import Little_Fashion from "./components/Categories/Little_Fashion";
-import AI from "./components/AI/AI";
-import Submit from "./components/Submit_Template/Submit";
-import Jobs from "./components/Categories/Jobs";
-import Tourest from "./components/Categories/Tourest";
-import Browny from "./components/Categories/Browny";
-import Klinik from "./components/Categories/Klinik";
-import Sbs from "./components/Categories/Sbs";
-import App_light from "./components/Categories/App_light";
-import Gaurder from "./components/Categories/Gaurder";
-import Healet from "./components/Categories/Healet";
+import React from 'react';
+import {Route} from 'react-router-dom'
+import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Contact from './components/Contact/Contact'
+import Templates from './components/Categories/Templates'
+import Page404 from './components/404/Page404';
+import Navbar from './components/Navbar/Navbar';
+import Services from './components/Services/Services'
+import Home1 from './components/Home/Home1';
+import './App.css'
+import Signup from './components/Sign-up/Signin_up';
+import Footers from './components/Footer/Footers';
+import Business from './components/Categories/Business';
+import Education from './components/Categories/Education';
+import Food from './components/Categories/Food';
+import Tourist from './components/Categories/Tourest';
+import Little_Fashion from './components/Categories/Little_Fashion';
+import AI from './components/AI/AI';
+import Submit from './components/Submit_Template/Submit';
+import Jobs from './components/Categories/Jobs';
+import Tourest from './components/Categories/Tourest';
+import Browny from './components/Categories/Browny';
+import Klinik from './components/Categories/Klinik';
+import Sbs from './components/Categories/Sbs';
+import App_light from './components/Categories/App_light';
+import Gaurder from './components/Categories/Gaurder';
+import Healet from './components/Categories/Healet';
 
-function App() {
+
+function App()
+{
+   
   return (
     <>
       <div className="App">
@@ -112,6 +115,8 @@ function App() {
       <Footers />
     </>
   );
+
 }
+
 
 export default App;

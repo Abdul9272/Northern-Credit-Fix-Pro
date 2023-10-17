@@ -1,7 +1,7 @@
 
 import React,{useEffect,useRef} from "react";
 import TData from "./TData";
-import Card from "../Services/Card";
+import Card from "./Card";
 
 function Tourest() {
   const HRef = useRef();

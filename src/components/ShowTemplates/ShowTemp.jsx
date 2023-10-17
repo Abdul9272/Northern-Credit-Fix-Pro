@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useRef} from "react";
 import Sdata from "./Sdata";
 import Card from "./Card";
 import web from "../img/How-to-Add-a-Homepage-Slider-in-WordPress.png";
@@ -6,16 +6,19 @@ import and from '../img/atomo.jpg';
 import car from '../img/comp.webp';
 import me from '../img/car-1300629_1280.png';
 
-
-
 import "./show.css";
 
 function ShowTemp(props) {
+  const HRef = useRef();
+
+  useEffect(() => {
+    HRef.current.scrollIntoView(0);
+  }, []);
   return (
     <>
-      <div className="my-5 " id="services">
+      <div className="my-5 " id="services" ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Templates of Business
+          Templates of Education
         </h1>
       </div>
       <div className="container-fluid mb-5">
@@ -33,8 +36,8 @@ function ShowTemp(props) {
                 );
               })}
 
-              <div className="col-lg-6 order-1 order-lg-2 header-img">
-                <img src={web} className="img-fluid animated" alt="img" />
+              <div className="center-img col-lg-6 order-1 order-lg-2 header-img">
+                <img src={web} className="img-fluid animated img-size" alt="img" />
               </div>
             </div>
           </div>
@@ -63,11 +66,11 @@ function ShowTemp(props) {
                 </span>
 
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
-                  <img src={and} className="img-fluid animated" alt="img" />
+                  <img src={and} className="rotate-img" alt="img" />
                 </div>
               </div>
 
-              <h4 style={{ fontWeight: "bold" }}>TEMPLATE download TERMS</h4>
+              <h4 style={{ fontWeight: "bold" }}>TEMPLATE DOWNLOAD TERMS</h4>
               <div className="rows">
                 <span>
                   If you would like to submit your free CSS templates simply

@@ -3,6 +3,7 @@ import React from "react";
 // import web from "./img/images.jpeg";
 import './card.css'
 import { Link } from "react-router-dom";
+import ShowTemp from "../ShowTemplates/ShowTemp";
 
 function Card(props) {
   return (
@@ -23,7 +24,7 @@ function Card(props) {
             <p className="card-text" style={{ textAlign: "justify" }}>
               {props.des}
             </p>
-            <Link to= {props.title} className="btn btn-primary w-100 text-center">
+            <Link to='/showtemp' className="btn btn-primary w-100 text-center">
               Get Info
             </Link>
           </div>

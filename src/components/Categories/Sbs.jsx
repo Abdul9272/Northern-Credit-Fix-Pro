@@ -1,7 +1,7 @@
 
 import React, { useEffect,useRef } from "react";
-import Sdata from "../Services/Sdata";
-import Card from "../Services/Card";
+import Sdata from "./BData";
+import Card from "./Card";
 
 function Sbs() {
   const SBRef=useRef();

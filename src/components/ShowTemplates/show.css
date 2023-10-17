@@ -9,6 +9,29 @@
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+.rotate-img {
+  animation: rotateAndMove 4s linear infinite, rotateImage 4s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes rotateAndMove {
+  0% {
+      transform: rotate(0deg) translateX(150px);
+  }
+  100% {
+      transform: rotate(360deg) translateX(150px);
+  }
+}
+
+@keyframes rotateImage {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes up-down {
   0% {
     transform: translateY(50px);
@@ -42,4 +65,19 @@ padding: 10px 10px 100px 400px;
 }
 .img-fluids{
   margin-left: 50px;
+  width: 350px;
+}
+
+.rows span{
+  font-size: 18px;
+  text-align: justify;
+  /* justify-content: center; */
+}
+li{
+  font-size: 18px;
+}
+.center-img{
+  display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
 }

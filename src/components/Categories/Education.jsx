@@ -1,6 +1,6 @@
 import React,{useEffect,useRef} from "react";
 import EData from "./EData";
-import Card from "../Services/Card";
+import Card from "./Card";
 
 function Education() {
   const HRef = useRef();

@@ -20,7 +20,7 @@ const Bdata = [
   {
     imgscr: b,
     title: "The SEO Company",
-    des: "The SEO Company is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    des: "The SEO Company is a bootstrap 3 framework based html5/css3 template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: c,
@@ -40,7 +40,7 @@ const Bdata = [
   {
     imgscr: f,
     title: "Job Entry",
-    des: "Job Entry Fashion is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    des: "Job Entry Fashion is a bootstrap 3 framework based html5/css3 template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: g,

@@ -29,6 +29,7 @@ import Sbs from './components/Categories/Sbs';
 import App_light from './components/Categories/App_light';
 import Gaurder from './components/Categories/Gaurder';
 import Healet from './components/Categories/Healet';
+import ShowTemp from './components/ShowTemplates/ShowTemp';
 
 
 function App()
@@ -88,7 +89,7 @@ function App()
           <Route exact path="/jobs">
             <Jobs />
           </Route>
-          <Route exact path="/browny">
+          <Route exact path="/Browny">
             <Browny />
           </Route>
           <Route exact path="/klinik">
@@ -105,6 +106,9 @@ function App()
           </Route>
           <Route exact path="/healet">
             <Healet />
+          </Route>
+          <Route exact path="/showtemp">
+            <ShowTemp />
           </Route>
           <Route exact path="*">
             <Page404 />

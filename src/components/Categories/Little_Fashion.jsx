@@ -1,6 +1,6 @@
 import React,{useEffect,useRef} from "react";
 import LData from "./LData";
-import Card from "../Services/Card";
+import Card from "./Card";
 
 function Little_Fashion() {
   const HRef = useRef();

@@ -1,6 +1,6 @@
 import React,{useRef,useEffect} from "react";
 import FData from "./FData";
-import Card from "../Services/Card";
+import Card from "./Card";
 
 function Food() {
   const HRef = useRef();

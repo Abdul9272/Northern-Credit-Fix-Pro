@@ -63,7 +63,7 @@ function Contact() {
 
                   
                   <div className="mt-3 d-flex justify-content-center">
-                    <Link to="/" className="w-50 btn-get-started">
+                    <Link to="/" className="w-50 btn_ btn-get-started">
                         Submit
                     </Link>
                   </div>
@@ -104,7 +104,7 @@ function Contact() {
                 </span>
 
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
-                  <img src={and} className="img-fluid animated" alt="img" />
+                  <img src={and} className="rotate-img" alt="img" />
                 </div>
               </div>
 

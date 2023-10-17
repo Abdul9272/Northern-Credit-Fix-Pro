@@ -1,12 +1,17 @@
 
-import React from "react";
-import Sdata from "../Services/Sdata";
-import Card from "../Services/Card";
+import React,{useRef,useEffect} from "react";
+import Sdata from "./TData";
+import Card from "./Card";
 
 function Klinik() {
+  const HRef = useRef();
+
+  useEffect(() => {
+    HRef.current.scrollIntoView(0);
+  }, []);
   return (
     <>
-      <div className="my-5 ">
+      <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
           Our Klinik Templates
         </h1>

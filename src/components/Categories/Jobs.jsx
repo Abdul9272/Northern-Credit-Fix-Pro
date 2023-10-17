@@ -1,7 +1,7 @@
 
 import React,{useEffect,useRef} from "react";
-import Sdata from "../Services/Sdata";
-import Card from "../Services/Card";
+import Sdata from "./EData";
+import Card from "./Card";
 
 function Jobs() {
   const HRef = useRef();

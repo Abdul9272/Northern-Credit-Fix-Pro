@@ -1,12 +1,17 @@
 
-import React from "react";
-import Sdata from "../Services/Sdata";
-import Card from "../Services/Card";
+import React,{useEffect,useRef} from "react";
+import Sdata from "./BData";
+import Card from "./Card";
 
 function Healet() {
+  const HRef = useRef();
+
+  useEffect(() => {
+    HRef.current.scrollIntoView(0);
+  }, []);
   return (
     <>
-      <div className="my-5 ">
+      <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
           Our Healet Templates
         </h1>

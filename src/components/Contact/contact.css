@@ -19,4 +19,10 @@ form textarea {
 }
 .mt-3{
   margin-left: 20px;
+
 }
+.btn_{
+  border-radius: 0%;
+  padding: 0%;
+}
+

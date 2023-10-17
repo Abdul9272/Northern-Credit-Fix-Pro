@@ -1,6 +1,6 @@
 import React,{useEffect,useRef} from "react";
 import BData from "./BData";
-import Card from "../Services/Card";
+import Card from "./Card";
 
 function Business() {
   const HRef = useRef();

@@ -19,7 +19,7 @@ import Education from './components/Categories/Education';
 import Food from './components/Categories/Food';
 import Tourist from './components/Categories/Tourest';
 import Little_Fashion from './components/Categories/Little_Fashion';
-import AI from './components/AI/AI';
+import AI from './components/AI/Artifical';
 import Submit from './components/Submit_Template/Submit';
 import Jobs from './components/Categories/Jobs';
 import Tourest from './components/Categories/Tourest';
@@ -77,7 +77,7 @@ function App()
           <Route exact path="/other">
             <Templates />
           </Route>
-          <Route exact path="/ai">
+          <Route exact path="/artifical">
             <AI />
           </Route>
           <Route exact path="/submit">

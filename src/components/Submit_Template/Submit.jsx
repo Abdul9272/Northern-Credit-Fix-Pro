@@ -1,11 +1,13 @@
 import React from "react";
-import Sdata from "./Sdata";
+import Sdata from "../Categories/TData";
 import Card from "./Card";
-import web from "../img/register.svg";
+import log from "../img/log.svg";
+import web from '../img/register.svg'
 import and from '../img/atomo.jpg';
 import car from '../img/comp.webp';
 import me from '../img/huza.jpg';
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+// import web from "../img/register.svg";
 
 
 import "./submit.css";
@@ -18,28 +20,73 @@ function Submit() {
           Submit A Templates
         </h1>
       </div>
-      <div className="container-fluid mb-5">
-        <div className="row">
-          <div className="col-10 mx-auto">
-            <div className="row gy-4">
-              {Sdata.map((val, ind) => {
-                return (
-                  <Card
-                    key={ind}
-                    imgscr={val.imgscr}
-                    title={val.title}
-                    des={val.des}
-                  />
-                );
-              })}
+      
+      <section id="header" className="d-flex">
+        <div className="container-fluid nav_bg">
+          <div className="row">
+            <div className="col-10 mx-auto">
+              <div className="row">
+                <div className="col-md-6 pt-5 pt-log-0 order-2 order-lg-1">
+                  <form>
+                    <div className="mb-3">
+                      <h2
+                        className="my-5"
+                        style={{ fontWeight: "bold", textAlign: "center" }}
+                      >
+                        Fill This Form
+                      </h2>
+                      <input
+                        type="Text"
+                        className="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Template Title"
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <input
+                        type="Text"
+                        className="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Template Category "
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Your Email"
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <textarea
+                        className="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Template Description"
+                      ></textarea>
+                    </div>
+                  </form>
 
-              <div className="col-lg-6 order-1 order-lg-2 header-img">
-                <img src={web} className="img-fluid animated" alt="img" />
+                  
+                  <div className="mt-3 d-flex justify-content-center">
+                    <Link to="/" className="w-50 btn_ btn-get-started">
+                        Submit Template
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-lg-6 order-1 order-lg-2 header-img">
+                  <img
+                    src={log}
+                    className="img-fluid animated"
+                    alt="About img"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <hr />
       <div className="container-fluid mb-5">
         <div className="row">
@@ -118,7 +165,7 @@ function Submit() {
         </div>
       </div>
 
-      <div className="center container-fluid nav_bg">
+      {/* <div className="center container-fluid nav_bg">
       <div className="row">
         <div className="col-10 mx-auto">
         <div  className="col-lg-6  order-1 order-lg-2 header-img">
@@ -128,7 +175,26 @@ function Submit() {
         </div>
       </div>
     </div>
-     
+      */}
+       <div className="container-fluid mb-5">
+        <div className="row">
+          <div className="col-10 mx-auto">
+          <h4 style={{ fontWeight: "bold" }}>TEMPLATE SAMPLE</h4>
+            <div className="row gy-4 mt-5">
+              {Sdata.slice(0,3).map((val, ind) => {
+                return (
+                  <Card
+                    key={ind}
+                    imgscr={val.imgscr}
+                    title={val.title}
+                    des={val.des}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

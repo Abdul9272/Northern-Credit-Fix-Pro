@@ -49,7 +49,7 @@ function Navbar() {
                   className={`dropdown-toggle nav-link ${
                     location.pathname === "/ai" ? "active" : ""
                   }`}
-                  to="/ai"
+                  to="/artifical"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -67,9 +67,12 @@ function Navbar() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/ai">
+                  <Link className="dropdown-item" to="/artifical">
                       Customization using Artificial Intelligence
                     </Link>
+                    {/* <Link className="dropdown-item" to="/ai">
+                      Customization using Artificial Intelligence
+                    </Link> */}
                   </li>
                 </ul>
               </li>

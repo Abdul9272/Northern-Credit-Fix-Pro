@@ -24,7 +24,7 @@ function Card(props) {
               {props.des}
             </p>
             <Link to= "#" className="btn btn-primary w-100 text-center">
-              Submit A Templates
+             GET INFO
             </Link>
           </div>
         </div>

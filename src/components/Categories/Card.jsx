@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import ShowTemp from "../ShowTemplates/ShowTemp";
 
 function Card(props) {
+  const title = props.title;
+  const des = props.des;
+  const img = props.imgscr;
   return (
     <>
       <div className="col-md-4 col-10 mx-auto">
@@ -24,9 +27,12 @@ function Card(props) {
             <p className="card-text" style={{ textAlign: "justify" }}>
               {props.des}
             </p>
-            <Link to='/showtemp' className="btn btn-primary w-100 text-center">
-              Get Info
-            </Link>
+            <Link to={{
+      pathname: '/showtemp',
+      state: { title, des,img }
+    }} className="btn btn-primary w-100 text-center">
+      Get Info
+    </Link>
           </div>
         </div>
 

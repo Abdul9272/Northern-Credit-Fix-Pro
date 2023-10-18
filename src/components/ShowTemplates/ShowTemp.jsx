@@ -5,11 +5,14 @@ import web from "../img/How-to-Add-a-Homepage-Slider-in-WordPress.png";
 import and from '../img/atomo.jpg';
 import car from '../img/comp.webp';
 import me from '../img/car-1300629_1280.png';
+import { Link,useLocation } from "react-router-dom";
 
 import "./show.css";
 
 function ShowTemp(props) {
   const HRef = useRef();
+  const location = useLocation(); // Use the useLocation hook
+  const { title, des,img } = location.state;
 
   useEffect(() => {
     HRef.current.scrollIntoView(0);
@@ -18,23 +21,50 @@ function ShowTemp(props) {
     <>
       <div className="my-5 " id="services" ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Templates of Education
+          {title} Template Detail
         </h1>
       </div>
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {Sdata.map((val, ind) => {
-                return (
-                  <Card
-                    key={ind}
-                    imgscr={val.imgscr}
-                    title={val.title}
-                    des={val.des}
-                  />
-                );
-              })}
+              <div className="col-md-4 col-10 mx-auto">
+        <div className="card" style={{cursor:"pointer", height: "440px", overflow: "hidden" }}>
+          <img
+            src={img}
+            className="card-img-top"
+            alt="img"
+            style={{ objectFit: "cover", height: "200px", width: "100%" }}
+          />
+          <div
+            className="card-body"
+            style={{ height: "200px", overflow: "hidden" }}
+          >
+            <h5 className="card-title font-weight-bold">{title}</h5>
+            <p className="card-text" style={{ textAlign: "justify" }}>
+              {des}
+            </p>
+          </div>
+        </div>
+            <Link to= "#" className="btn btn-primary w-100 text-center">
+              download Zip File
+            </Link>
+            <Link to= "#" className="btn btn-primary w-100 text-center">
+              PreView of Template
+            </Link>
+
+        {/* <div className="card">
+          <img src={props.imgscr} className="card-img-top" alt="img" />
+          <div className="card-body">
+            <h5 className="card-title font-weight-bold">{props.title}</h5>
+            <p className="card-text" >
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            
+          </div>
+        </div> */}
+      </div>
 
               <div className="center-img col-lg-6 order-1 order-lg-2 header-img">
                 <img src={web} className="img-fluid animated img-size" alt="img" />

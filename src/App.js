@@ -30,6 +30,7 @@ import App_light from './components/Categories/App_light';
 import Gaurder from './components/Categories/Gaurder';
 import Healet from './components/Categories/Healet';
 import ShowTemp from './components/ShowTemplates/ShowTemp';
+import Signin_up from './components/Sign-up/Signin_up';
 
 
 function App()
@@ -41,6 +42,7 @@ function App()
         {/* <Signup/> */}
         <Navbar />
         <Switch>
+          
           <Route exact path="/home">
             <Home />
           </Route>

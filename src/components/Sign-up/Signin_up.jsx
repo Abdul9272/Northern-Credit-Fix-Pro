@@ -63,7 +63,10 @@ const SignIn_Up = () => {
               <i className="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" className="btn" value="Sign up" />
+            {/* <input type="submit" className="btn" value="Sign up" /> */}
+            <Link to="/" onClick={toggleMode} className="btn solid btn-get-started">
+              Sign Up
+            </Link>
             {/* <hr /> */}
             <p className="social-text">Or Sign up with social platforms</p>
             <div className="social-media">

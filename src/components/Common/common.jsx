@@ -7,7 +7,7 @@ function Common(props) {
       <div className="container-fluid nav_bg">
         <div className="row">
           <div className="col-10 mx-auto">
-            <div className="row">
+            <div className="row set">
               <div className="col-md-6 pt-5 pt-log-0 order-2 order-lg-1">
                 <h2 className="my-3">
                   {props.name}

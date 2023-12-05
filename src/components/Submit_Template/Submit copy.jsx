@@ -1,84 +1,98 @@
-import React,{useEffect,useRef} from "react";
-import Sdata from "./Sdata";
+import React from "react";
+import Sdata from "../Categories/TData";
 import Card from "./Card";
-import web from "../img/How-to-Add-a-Homepage-Slider-in-WordPress.png";
+import log from "../img/log.svg";
+import web from '../img/register.svg'
 import and from '../img/atomo.jpg';
 import car from '../img/comp.webp';
-import me from '../img/car-1300629_1280.png';
-import { Link,useLocation } from "react-router-dom";
+import me from '../img/huza.jpg';
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+// import web from "../img/register.svg";
 
-import "./show.css";
 
-function ShowTemp(props) {
-  const HRef = useRef();
-  const location = useLocation(); // Use the useLocation hook
-  const { title, des,img,link } = location.state;
+import "./submit.css";
 
-  useEffect(() => {
-    HRef.current.scrollIntoView(0);
-  }, []);
+function Submit() {
   return (
     <>
-      <div className="my-5 " id="services" ref={HRef}>
+      <div className="my-5 " id="services">
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          {title} Template Detail
+          Submit A Templates
         </h1>
       </div>
-      <div className="container-fluid mb-5">
-        <div className="row">
-          <div className="col-10 mx-auto">
-            <div className="row gy-4">
-              <div className="col-md-4 col-10 mx-auto">
-        <div className="card" style={{cursor:"pointer", height: "440px", overflow: "hidden" }}>
-          <img
-            src={img}
-            className="card-img-top"
-            alt="img"
-            style={{ objectFit: "cover", height: "200px", width: "100%" }}
-          />
-          <div
-            className="card-body"
-            style={{ height: "200px", overflow: "hidden" }}
-          >
-            <h5 className="card-title font-weight-bold">{title}</h5>
-            <p className="card-text" style={{ textAlign: "justify" }}>
-              {des}
-            </p>
-          </div>
-        </div>
-            <Link to= "#" className="btn btn-primary w-100 text-center">
-              download Zip File
-            </Link>
-            <a href= {link} target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
-              PreView of Template
-            </a>
+      
+      <section id="header" className="d-flex">
+        <div className="container-fluid nav_bg">
+          <div className="row">
+            <div className="col-10 mx-auto">
+              <div className="row">
+                <div className="col-md-6 pt-5 pt-log-0 order-2 order-lg-1">
+                  <form>
+                    <div className="mb-3">
+                      <h2
+                        className="my-5"
+                        style={{ fontWeight: "bold", textAlign: "center" }}
+                      >
+                        Fill This Form
+                      </h2>
+                      <input
+                        type="Text"
+                        className="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Template Title"
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <input
+                        type="Text"
+                        className="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Template Category "
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <input
+                        type="email"
+                        className="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Your Email"
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <textarea
+                        className="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Template Description"
+                      ></textarea>
+                    </div>
+                  </form>
 
-        {/* <div className="card">
-          <img src={props.imgscr} className="card-img-top" alt="img" />
-          <div className="card-body">
-            <h5 className="card-title font-weight-bold">{props.title}</h5>
-            <p className="card-text" >
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            
-          </div>
-        </div> */}
-      </div>
-
-              <div className="center-img col-lg-6 order-1 order-lg-2 header-img">
-                <img src={web} className="img-fluid animated img-size" alt="img" />
+                  
+                  <div className="mt-3 d-flex justify-content-center">
+                    <Link to="/" className="w-50 btn_ btn-get-started">
+                        Submit Template
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-lg-6 order-1 order-lg-2 header-img">
+                  <img
+                    src={log}
+                    className="img-fluid animated"
+                    alt="About img"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <hr />
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              <h4 style={{ fontWeight: "bold" }}>A FREE CSS TEMPLATE</h4>
+              <h4 style={{ fontWeight: "bold" }}>SUBMIT A FREE CSS TEMPLATE</h4>
               <div className="rows">
                 <span>
                   If you would like to submit your free CSS templates simply
@@ -96,11 +110,11 @@ function ShowTemp(props) {
                 </span>
 
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
-                  <img src={and} className="rotate-img" alt="img" />
+                  <img src={and} className="img-fluid animated" alt="img" />
                 </div>
               </div>
 
-              <h4 style={{ fontWeight: "bold" }}>TEMPLATE DOWNLOAD TERMS</h4>
+              <h4 style={{ fontWeight: "bold" }}>TEMPLATE SUBMISSION TERMS</h4>
               <div className="rows">
                 <span>
                   If you would like to submit your free CSS templates simply
@@ -132,7 +146,7 @@ function ShowTemp(props) {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              <h4 style={{ fontWeight: "bold" }}> Free CSS does not publish or accept the following:</h4>
+              <h4 style={{ fontWeight: "bold" }}> ThemeZone does not publish or accept the following:</h4>
               <div className="rows">
                 <ul>
                 <li>  Table based templates</li>
@@ -151,7 +165,7 @@ function ShowTemp(props) {
         </div>
       </div>
 
-      <div className="center container-fluid nav_bg">
+      {/* <div className="center container-fluid nav_bg">
       <div className="row">
         <div className="col-10 mx-auto">
         <div  className="col-lg-6  order-1 order-lg-2 header-img">
@@ -161,9 +175,28 @@ function ShowTemp(props) {
         </div>
       </div>
     </div>
-     
+      */}
+       <div className="container-fluid mb-5">
+        <div className="row">
+          <div className="col-10 mx-auto">
+          <h4 style={{ fontWeight: "bold" }}>TEMPLATE SAMPLE</h4>
+            <div className="row gy-4 mt-5">
+              {Sdata.slice(0,3).map((val, ind) => {
+                return (
+                  <Card
+                    key={ind}
+                    imgscr={val.imgscr}
+                    title={val.title}
+                    des={val.des}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
 
-export default ShowTemp;
+export default Submit;

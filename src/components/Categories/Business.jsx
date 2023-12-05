@@ -27,6 +27,7 @@ function Business() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
                   />
                 );
               })}

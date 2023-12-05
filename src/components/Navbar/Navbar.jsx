@@ -36,6 +36,20 @@ function Navbar() {
                 </Link>
               </li>
 
+             
+
+              <li className="nav-item">
+                <Link
+                  activeclassname="menu-active"
+                  className={`nav-link ${
+                    location.pathname === "/services" ? "active" : ""
+                  }`}
+                  to="/services"
+                >
+                  Templates
+                </Link>
+              </li>
+
               <li className="nav-item dropdown">
                 <Link
                   className={`dropdown-toggle nav-link ${
@@ -47,7 +61,7 @@ function Navbar() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  AI
+                  Search
                 </Link>
                 <ul className="dropdown-menu dropdown-menu-end custom-bg">
                   <li>
@@ -69,19 +83,7 @@ function Navbar() {
                 </ul>
               </li>
 
-              <li className="nav-item">
-                <Link
-                  activeclassname="menu-active"
-                  className={`nav-link ${
-                    location.pathname === "/services" ? "active" : ""
-                  }`}
-                  to="/services"
-                >
-                  Services
-                </Link>
-              </li>
-
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <Link
                   className={`nav-link dropdown-toggle ${
                     location.pathname.startsWith("/templates") ? "active" : ""
@@ -129,7 +131,7 @@ function Navbar() {
                     </Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link
@@ -152,6 +154,18 @@ function Navbar() {
                   to="/contact"
                 >
                   Contact
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link
+                  activeclassname="menu-active"
+                  className={`nav-link ${
+                    location.pathname === "/about" ? "active" : ""
+                  }`}
+                  to="/"
+                >
+                  LogOut
                 </Link>
               </li>
             </ul>

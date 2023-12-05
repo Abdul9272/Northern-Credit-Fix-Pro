@@ -12,7 +12,6 @@ import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services'
 import Home1 from './components/Home/Home1';
 import './App.css'
-import Signup from './components/Sign-up/Signin_up';
 import Footers from './components/Footer/Footers';
 import Business from './components/Categories/Business';
 import Education from './components/Categories/Education';
@@ -30,7 +29,8 @@ import App_light from './components/Categories/App_light';
 import Gaurder from './components/Categories/Gaurder';
 import Healet from './components/Categories/Healet';
 import ShowTemp from './components/ShowTemplates/ShowTemp';
-import Signin_up from './components/Sign-up/Signin_up';
+import Signinup from './components/Sign-up/Signinup';
+
 
 
 function App()
@@ -43,6 +43,7 @@ function App()
         <Navbar />
         <Switch>
           
+        
           <Route exact path="/home">
             <Home />
           </Route>

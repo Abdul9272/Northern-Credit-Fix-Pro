@@ -13,7 +13,7 @@ function Services() {
     <>
       <div className="my-5 " id="services" ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Services
+          Our Templates
         </h1>
       </div>
 

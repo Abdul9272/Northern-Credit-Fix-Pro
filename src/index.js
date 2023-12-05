@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import ShowTemp from "./components/ShowTemplates/ShowTemp";
-import SignIn_Up from "./components/Sign-up/Signin_up";
+import SignIn_Up from "./components/Sign-up/Signinup";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

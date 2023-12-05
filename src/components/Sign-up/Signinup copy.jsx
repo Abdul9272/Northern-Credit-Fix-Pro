@@ -1,33 +1,91 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import {useHistory } from "react-router-dom"
 import "./sign-up.css";
 import reg from "../img/register.svg";
 import log from "../img/log.svg";
+import axios from "axios"
 
 const SignIn_Up = () => {
   const [isSignUpMode, setIsSignUpMode] = useState(false);
+  const history=useHistory();
 
   const toggleMode = () => {
     setIsSignUpMode(!isSignUpMode);
   };
 
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+
+  async function submit(e){
+    e.preventDefault();
+  
+    try{
+        await axios.post("http://localhost:8000/",{
+          email,password
+        }).then(res=>{
+          if(res.data=="exist"){
+              history("/home",{state:{id:email}})
+          }
+          else if(res.data=="notexist"){
+              alert("User have not sign up")
+          }
+      }).catch(e=>{
+          alert("wrong details1")
+          console.log(e);
+      })
+
+    }
+    catch(e){
+              console.log(e);
+
+    }
+  }
+  async function submit1(e){
+    e.preventDefault();
+
+    try{
+        await axios.post("http://localhost:8000/signup",{
+          email,password
+        }).then(res=>{
+          if(res.data=="exist"){
+            alert("User Already Exist")
+          }
+          else if(res.data=="notexist"){
+            history("/home",{state:{id:email}})
+          }
+      }).catch(e=>{
+          alert("wrong details2")
+          console.log(e);
+      })
+
+    }
+    catch(e){
+              console.log(e);
+
+    }
+  }
+
+  
+
   return (
     <div className={`container ${isSignUpMode ? "sign-up-mode" : ""}`}>
       <div className="forms-container">
         <div className="signin-signup">
-          <form action="#" className="sign-in-form">
+          <form action="POST" className="sign-in-form">
             <h2 className="title">Sign In</h2>
             <div className="input-field">
               <i className="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email" />
             </div>
             <div className="input-field">
               <i className="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" onChange={(e)=>{setPassword(e.target.value)}} placeholder="Password" />
             </div>
 
             {/* <input type="submit" value="Login" className="btn solid" /> */}
-            <Link to="/" className="btn solid btn-get-started">
+            <Link onClick={submit} to="/" className="btn solid btn-get-started">
               Login
             </Link>
             {/* <button className="btn solid btn-get-started" onClick={handleLogin}>Login</button> */}
@@ -49,24 +107,27 @@ const SignIn_Up = () => {
               </a>
             </div>
           </form>
-          <form action="#" className="sign-up-form">
+          <form action="POST" className="sign-up-form">
             <h2 className="title">Sign Up</h2>
-            <div className="input-field">
+            {/* <div className="input-field">
               <i className="fas fa-user"></i>
               <input type="text" placeholder="Username" />
-            </div>
+            </div> */}
             <div className="input-field">
               <i className="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email" />
             </div>
             <div className="input-field">
               <i className="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" onChange={(e)=>{setPassword(e.target.value)}} placeholder="Password" />
             </div>
             {/* <input type="submit" className="btn" value="Sign up" /> */}
-            <Link to="/" onClick={toggleMode} className="btn solid btn-get-started">
-              Sign Up
+            <Link to="/" onClick={submit1} className="btn solid btn-get-started">
+              Sumbit
             </Link>
+            {/* <Link to="/" onClick={toggleMode} className="btn solid btn-get-started">
+              Sign Up
+            </Link> */}
             {/* <hr /> */}
             <p className="social-text">Or Sign up with social platforms</p>
             <div className="social-media">

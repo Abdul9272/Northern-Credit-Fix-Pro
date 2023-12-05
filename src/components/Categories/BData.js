@@ -14,63 +14,75 @@ import m from "../img/Bussiness/12.jpg";
 const Bdata = [
   {
     imgscr: a,
-    title: "Digian",
-    des: "Digian is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    title: "Bricker",
+    des: "Hello is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Bricker/",
   },
   {
     imgscr: b,
-    title: "The SEO Company",
+    title: "DGital",
     des: "The SEO Company is a bootstrap 3 framework based html5/css3 template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/DGital/",
   },
   {
     imgscr: c,
-    title: "Troweld",
+    title: "Esigned",
     des: "Troweld is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Esigned/",
   },
   {
     imgscr: d,
-    title: "Namari",
+    title: "Fables",
     des: "Namari Lite is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Fables/",
   },
   {
     imgscr: e,
-    title: "Electrochip",
+    title: "Finter",
     des: "Electrochip is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Finter/",
   },
   {
     imgscr: f,
-    title: "Job Entry",
+    title: "Guarder",
     des: "Job Entry Fashion is a bootstrap 3 framework based html5/css3 template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Guarder/",
   },
   {
     imgscr: g,
-    title: "Shapel",
+    title: "Hexashop",
     des: "Shapel is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Hexashop/",
   },
   {
     imgscr: h,
-    title: "EntryXibition",
+    title: "Inance",
     des: "EntryXibition is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Inance/"
   },
   {
     imgscr: j,
-    title: "PrimeCare",
+    title: "JobEntery",
     des: "PrimeCare is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/JobEntry/",
   },
   {
     imgscr: k,
-    title: "Rent4U",
+    title: "Makaan",
     des: "Rent4U is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Makaan/",
   },
   {
     imgscr: l,
-    title: "Woody",
+    title: "Namari",
     des: "Woody is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Namari/",
   },
   {
     imgscr: m,
-    title: "Hirevac",
+    title: "Oxer",
     des: "Hirevac is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
+    link:"https://abdul9272.github.io/Oxer/",
   },
 ];
 

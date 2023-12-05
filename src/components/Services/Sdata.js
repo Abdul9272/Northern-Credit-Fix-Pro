@@ -19,31 +19,31 @@ const Sdata = [
   },
   {
     imgscr: b,
-    title: "Education",
+    title: "Computers",
 
     des: "Education is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: c,
-    title: "Food",
+    title: "E-Commerence",
 
     des: "Inance is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: d,
-    title: "Tourist",
+    title: "Education",
 
     des: "Mediplus Lite is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: e,
-    title: "Jobs",
+    title: "Health & Health Care",
 
     des: "Spering is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: f,
-    title: "Little",
+    title: "Transport",
 
     des: "Little Fashion is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },

@@ -1,8 +1,10 @@
+
 import React,{useEffect,useRef} from "react";
-import BData from "./BData";
+import Sdata from "./EData";
 import Card from "./Card";
 
-function Business() {
+function Healths()
+{
   const HRef = useRef();
 
   useEffect(() => {
@@ -12,7 +14,7 @@ function Business() {
     <>
       <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Business Templates
+          Our Health &  Care Templates
         </h1>
       </div>
 
@@ -20,15 +22,13 @@ function Business() {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {BData.map((val, ind) => {
+              {Sdata.map((val, ind) => {
                 return (
                   <Card
                     key={ind}
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
-                    link={val.link}
-                    dlink = {val.dlink}
                   />
                 );
               })}
@@ -40,4 +40,4 @@ function Business() {
   );
 }
 
-export default Business;
+export default Healths;

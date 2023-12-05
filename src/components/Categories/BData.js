@@ -17,6 +17,7 @@ const Bdata = [
     title: "Bricker",
     des: "Hello is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
     link:"https://abdul9272.github.io/Bricker/",
+    dlink:"https://codeload.github.com/Abdul9272/Makaan/zip/refs/heads/main",
   },
   {
     imgscr: b,

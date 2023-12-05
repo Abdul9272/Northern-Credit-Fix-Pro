@@ -1,18 +1,20 @@
-import React,{useEffect,useRef} from "react";
-import BData from "./BData";
+
+import React, { useEffect,useRef } from "react";
+import Sdata from "./BData";
 import Card from "./Card";
 
-function Business() {
-  const HRef = useRef();
+function EComm() {
+  const SBRef=useRef();
 
-  useEffect(() => {
-    HRef.current.scrollIntoView(0);
-  }, []);
+  useEffect(()=>{
+    SBRef.current.scrollIntoView(0)
+  },[])
+
   return (
     <>
-      <div className="my-5 " ref={HRef}>
+      <div className="my-5 " ref={SBRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Business Templates
+          Our E-Commerence Templates
         </h1>
       </div>
 
@@ -20,15 +22,13 @@ function Business() {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {BData.map((val, ind) => {
+              {Sdata.map((val, ind) => {
                 return (
                   <Card
                     key={ind}
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
-                    link={val.link}
-                    dlink = {val.dlink}
                   />
                 );
               })}
@@ -40,4 +40,4 @@ function Business() {
   );
 }
 
-export default Business;
+export default EComm;

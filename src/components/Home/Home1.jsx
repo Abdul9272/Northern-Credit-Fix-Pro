@@ -17,7 +17,7 @@ function Home1() {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {Sdata.slice(0, 6).map((val, ind) => {
+              {Sdata.slice(0, 13).map((val, ind) => {
                 return (
                   <Card
                     key={ind}

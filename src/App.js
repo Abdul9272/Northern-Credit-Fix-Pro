@@ -31,6 +31,13 @@ import Healet from './components/Categories/Healet';
 import ShowTemp from './components/ShowTemplates/ShowTemp';
 import Signinup from './components/Sign-up/Signinup';
 
+import Computers from './components/Categories/Computer'
+import E_Commerence from './components/Categories/EComm';
+
+import Healths from './components/Categories/Healths';
+import Transport from './components/Categories/Transport';
+
+
 
 
 function App()
@@ -52,6 +59,21 @@ function App()
           </Route>
           <Route exact path="/services">
             <Services />
+          </Route>
+
+          <Route exact path="/computers">
+            <Computers />
+          </Route>
+          <Route exact path="/e_comm">
+            <E_Commerence />
+          </Route>
+
+          <Route exact path="/health">
+            <Healths/>
+          </Route>
+
+          <Route exact path="/transport">
+            <Transport />
           </Route>
           <Route exact path="/about">
             <About />

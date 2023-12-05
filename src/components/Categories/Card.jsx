@@ -10,6 +10,7 @@ function Card(props) {
   const des = props.des;
   const img = props.imgscr;
   const link = props.link;
+  const dlink = props.dlink;
   return (
     <>
       <div className="col-md-4 col-10 mx-auto">
@@ -30,7 +31,7 @@ function Card(props) {
             </p>
             <Link to={{
       pathname: '/showtemp',
-      state: { title, des,img ,link}
+      state: { title, des,img ,link , dlink}
     }} className="btn btn-primary w-100 text-center">
       Get Info
     </Link>

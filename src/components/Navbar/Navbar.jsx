@@ -66,7 +66,7 @@ function Navbar() {
                 <ul className="dropdown-menu dropdown-menu-end custom-bg">
                   <li>
                     <Link className="dropdown-item" to="/submit">
-                      Submit a Template
+                      Submit
                     </Link>
                   </li>
                   <li>
@@ -74,7 +74,7 @@ function Navbar() {
                   </li>
                   <li>
                   <Link className="dropdown-item" to="/artifical">
-                      Customization using Artificial Intelligence
+                      Customization
                     </Link>
                     {/* <Link className="dropdown-item" to="/ai">
                       Customization using Artificial Intelligence

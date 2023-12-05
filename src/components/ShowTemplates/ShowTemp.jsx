@@ -12,7 +12,7 @@ import "./show.css";
 function ShowTemp(props) {
   const HRef = useRef();
   const location = useLocation(); // Use the useLocation hook
-  const { title, des,img,link } = location.state;
+  const { title, des,img,link ,dlink} = location.state;
 
   useEffect(() => {
     HRef.current.scrollIntoView(0);
@@ -46,9 +46,9 @@ function ShowTemp(props) {
             </p>
           </div>
         </div>
-            <Link to= "#" className="btn btn-primary w-100 text-center">
+            <a href= {dlink} className="btn btn-primary w-100 text-center">
               download Zip File
-            </Link>
+            </a>
             <a href= {link} target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
               PreView of Template
             </a>

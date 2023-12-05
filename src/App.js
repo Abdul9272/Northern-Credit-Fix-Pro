@@ -64,11 +64,11 @@ function App()
           <Route exact path="/computers">
             <Computers />
           </Route>
-          <Route exact path="/e_comm">
+          <Route exact path="/e-commerence">
             <E_Commerence />
           </Route>
 
-          <Route exact path="/health">
+          <Route exact path="/health & health care">
             <Healths/>
           </Route>
 

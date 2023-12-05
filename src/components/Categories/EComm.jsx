@@ -1,6 +1,6 @@
 
 import React, { useEffect,useRef } from "react";
-import Sdata from "./BData";
+import Sdata from "./ECommerenceData";
 import Card from "./Card";
 
 function EComm() {
@@ -29,6 +29,8 @@ function EComm() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}

@@ -1,6 +1,6 @@
 
 import React,{useEffect,useRef} from "react";
-import Sdata from "./EData";
+import Sdata from "./HData";
 import Card from "./Card";
 
 function Healths()
@@ -29,6 +29,8 @@ function Healths()
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}

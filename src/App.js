@@ -47,11 +47,17 @@ function App()
     <>
       <div className="App">
         {/* <Signup/> */}
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
+
           
+        <Route exact path="/">
+            <Signinup />
+          </Route>
+        
         
           <Route exact path="/home">
+          <Navbar />
             <Home />
           </Route>
           <Route exact path="/home1">

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import {useHistory } from "react-router-dom"
+// import {useRouter } from "react-router-dom";
+
 import "./sign-up.css";
 import reg from "../img/register.svg";
 import log from "../img/log.svg";
@@ -22,11 +24,13 @@ async function submit(e){
     e.preventDefault();
   
     try{
-        await axios.post("http://localhost:8000/",{
+        await axios.post("http://localhost:8000/login",{
           email,password
         }).then(res=>{
           if(res.data == "exist"){
-              history("/home",{state:{id:email}})
+            alert("heeeloo")
+              // history.push("/home",{state:{id:email}})
+              history.push("/home")
           }
           else if(res.data == "notexist"){
               alert("User have not sign up")
@@ -46,7 +50,7 @@ async function submit1(e){
     e.preventDefault();
 
     try{
-      await axios.post("http://localhost:3000/signinup",{email,password}
+      await axios.post("http://localhost:8000/signup",{email,password}
       ).then(res=>{
         if(res.data=="exist"){
           alert("User Already Exist")

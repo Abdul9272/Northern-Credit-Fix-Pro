@@ -1,9 +1,8 @@
-
 import React,{useEffect,useRef} from "react";
-import Sdata from "./EData";
+import LData from "./LData";
 import Card from "./Card";
 
-function Jobs() {
+function Politics() {
   const HRef = useRef();
 
   useEffect(() => {
@@ -13,7 +12,7 @@ function Jobs() {
     <>
       <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Jobs Templates
+          Our Politics Templates
         </h1>
       </div>
 
@@ -21,7 +20,7 @@ function Jobs() {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {Sdata.map((val, ind) => {
+              {LData.map((val, ind) => {
                 return (
                   <Card
                     key={ind}
@@ -39,4 +38,4 @@ function Jobs() {
   );
 }
 
-export default Jobs;
+export default Politics;

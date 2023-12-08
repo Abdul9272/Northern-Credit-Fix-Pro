@@ -1,4 +1,4 @@
-import React,{useEffect,useRef,useState} from "react";
+import React,{useEffect,useRef} from "react";
 import Sdata from "./Sdata";
 import Card from "./Card";
 import web from "../img/How-to-Add-a-Homepage-Slider-in-WordPress.png";
@@ -6,6 +6,7 @@ import and from '../img/atomo.jpg';
 import car from '../img/comp.webp';
 import me from '../img/car-1300629_1280.png';
 import { Link,useLocation } from "react-router-dom";
+
 import "./show.css";
 
 function ShowTemp(props) {
@@ -16,17 +17,6 @@ function ShowTemp(props) {
   useEffect(() => {
     HRef.current.scrollIntoView(0);
   }, []);
- 
-
- const [isModalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
   return (
     <>
       <div className="my-5 " id="services" ref={HRef}>
@@ -59,28 +49,9 @@ function ShowTemp(props) {
             <a href= {dlink} className="btn btn-primary w-100 text-center">
               download Zip File
             </a>
-            <a onClick={openModal} className="btn btn-primary w-100 text-center">Live Demo</a>
-                {isModalOpen && (
-                  <div className="modal">
-                    <div className="modal-content">
-                      <span className="close" onClick={closeModal}>
-                        &times;
-                      </span>
-                      <p className="template-title">{title} Template Demo</p>
-                      <iframe
-                        title={title}
-                        style={{ width: "100%", height: "100%", border: "none" }}
-                        src={link}
-                      ></iframe>
-                    </div>
-                  </div>
-                )}
-            {/* <a href= {link} target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
+            <a href= {link} target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
               PreView of Template
-            </a> */}
-            {/* <a href= '/editor' target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
-              Edit a Template
-            </a> */}
+            </a>
 
         {/* <div className="card">
           <img src={props.imgscr} className="card-img-top" alt="img" />

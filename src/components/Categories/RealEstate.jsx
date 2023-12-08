@@ -1,9 +1,9 @@
 
-import React,{useEffect,useRef} from "react";
-import Sdata from "./BData";
+import React,{useRef,useEffect} from "react";
+import Sdata from "./TData";
 import Card from "./Card";
 
-function Healet() {
+function RealEstate() {
   const HRef = useRef();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Healet() {
     <>
       <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Healet Templates
+          Our Real-Estate Templates
         </h1>
       </div>
 
@@ -39,4 +39,4 @@ function Healet() {
   );
 }
 
-export default Healet;
+export default RealEstate;

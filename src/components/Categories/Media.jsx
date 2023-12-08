@@ -1,8 +1,9 @@
+
 import React,{useEffect,useRef} from "react";
-import LData from "./LData";
+import Sdata from "./EData";
 import Card from "./Card";
 
-function Little_Fashion() {
+function Media() {
   const HRef = useRef();
 
   useEffect(() => {
@@ -12,7 +13,7 @@ function Little_Fashion() {
     <>
       <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Little Fashion Templates
+          Our Media Templates
         </h1>
       </div>
 
@@ -20,7 +21,7 @@ function Little_Fashion() {
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              {LData.map((val, ind) => {
+              {Sdata.map((val, ind) => {
                 return (
                   <Card
                     key={ind}
@@ -38,4 +39,4 @@ function Little_Fashion() {
   );
 }
 
-export default Little_Fashion;
+export default Media;

@@ -1,9 +1,9 @@
 
-import React,{useRef,useEffect} from "react";
-import Sdata from "./TData";
+import React,{useEffect,useRef} from "react";
+import Sdata from "./LData";
 import Card from "./Card";
 
-function Klinik() {
+function Wedding() {
   const HRef = useRef();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Klinik() {
     <>
       <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Klinik Templates
+          Our Wedding Templates
         </h1>
       </div>
 
@@ -39,4 +39,4 @@ function Klinik() {
   );
 }
 
-export default Klinik;
+export default Wedding;

@@ -1,9 +1,9 @@
 
 import React,{useEffect,useRef} from "react";
-import TData from "./TData";
+import TData from "./IData";
 import Card from "./Card";
 
-function Tourest() {
+function Industry() {
   const HRef = useRef();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Tourest() {
     <>
       <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Tourest Templates
+          Our Industry Templates
         </h1>
       </div>
 
@@ -28,6 +28,8 @@ function Tourest() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}
@@ -39,4 +41,4 @@ function Tourest() {
   );
 }
 
-export default Tourest;
+export default Industry;

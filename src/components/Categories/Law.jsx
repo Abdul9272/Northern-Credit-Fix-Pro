@@ -1,9 +1,9 @@
 
 import React,{useEffect,useRef} from "react";
-import Sdata from "./LData";
+import Sdata from "./BData";
 import Card from "./Card";
 
-function Browny() {
+function Law() {
   const HRef = useRef();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function Browny() {
     <>
       <div className="my-5 " ref={HRef}>
         <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Our Browny Templates
+          Our Law Templates
         </h1>
       </div>
 
@@ -28,6 +28,8 @@ function Browny() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}
@@ -39,4 +41,4 @@ function Browny() {
   );
 }
 
-export default Browny;
+export default Law;

@@ -28,7 +28,7 @@ async function submit(e){
           email,password
         }).then(res=>{
           if(res.data == "exist"){
-            alert("heeeloo")
+            alert("Welcome!!")
               // history.push("/home",{state:{id:email}})
               history.push("/home")
           }

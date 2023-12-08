@@ -49,32 +49,32 @@ const Sdata = [
   },
   {
     imgscr: g,
-    title: "Browny",
+    title: "Industry",
     des: "Browny is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: h,
-    title: "Klinik",
+    title: "Law",
     des: "Klinik is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: j,
-    title: "Sbs",
+    title: "Media",
     des: "Sbs is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: k,
-    title: "App_Light",
+    title: "Politics",
     des: "App Light is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: l,
-    title: "Gaurder",
+    title: "Real Estate",
     des: "Gaurder is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
   {
     imgscr: m,
-    title: "Healet",
+    title: "Wedding",
     des: "Healet is a bootstrap 3 framework based html5/css3 directory listing template.It will help developers to rapidly built a directory website.",
   },
 ];

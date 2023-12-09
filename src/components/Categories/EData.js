@@ -11,6 +11,7 @@ import k from "../img/Education/10.jpg";
 import l from "../img/Education/11.jpg";
 import m from "../img/Education/12.jpg";
 
+
 const Edata = [
   {
     imgscr: a,

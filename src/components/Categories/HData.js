@@ -1,15 +1,15 @@
-import a from "../img/Food/1.jpg";
-import b from "../img/Food/2.jpg";
-import c from "../img/Food/3.jpg";
-import d from "../img/Food/4.jpg";
-import e from "../img/Food/5.jpg";
-import f from "../img/Food/6.jpg";
-import g from "../img/Food/7.jpg";
-import h from "../img/Food/8.jpg";
-import j from "../img/Food/9.jpg";
-import k from "../img/Food/10.jpg";
-import l from "../img/Food/11.jpg";
-import m from "../img/Food/12.jpg";
+import a from "../img/Health and care/1.jpg";
+import b from "../img/Health and care/2.jpg";
+import c from "../img/Health and care/3.jpg";
+import d from "../img/Health and care/4.jpg";
+import e from "../img/Health and care/5.jpg";
+import f from "../img/Health and care/6.jpg";
+import g from "../img/Health and care/7.jpg";
+import h from "../img/Health and care/8.jpg";
+import j from "../img/Health and care/9.jpg";
+import k from "../img/Health and care/10.jpg";
+import l from "../img/Health and care/11.jpg";
+import m from "../img/Health and care/12.jpg";
 
 const Fdata = [
   {

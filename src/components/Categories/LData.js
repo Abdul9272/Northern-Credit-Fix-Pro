@@ -1,15 +1,15 @@
-import a from "../img/Little/1.jpg";
-import b from "../img/Little/2.jpg";
-import c from "../img/Little/3.jpg";
-import d from "../img/Little/4.jpg";
-import e from "../img/Little/5.jpg";
-import f from "../img/Little/6.jpg";
-import g from "../img/Little/7.jpg";
-import h from "../img/Little/8.jpg";
-import j from "../img/Little/9.jpg";
-import k from "../img/Little/10.jpg";
-import l from "../img/Little/11.jpg";
-import m from "../img/Little/12.jpg";
+import a from "../img/Law/1.jpg";
+import b from "../img/Law/2.jpg";
+import c from "../img/Law/3.jpg";
+import d from "../img/Law/4.jpg";
+import e from "../img/Law/5.jpg";
+import f from "../img/Law/6.jpg";
+import g from "../img/Law/7.jpg";
+import h from "../img/Law/8.jpg";
+import j from "../img/Law/9.jpg";
+import k from "../img/Law/10.jpg";
+import l from "../img/Law/11.jpg";
+import m from "../img/Law/12.jpg";
 
 const Ldata = [
   {

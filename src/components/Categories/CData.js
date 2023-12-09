@@ -1,15 +1,15 @@
-import a from "../img/Education/1.jpg";
-import b from "../img/Education/2.jpg";
-import c from "../img/Education/3.jpg";
-import d from "../img/Education/4.jpg";
-import e from "../img/Education/5.jpg";
-import f from "../img/Education/6.jpg";
-import g from "../img/Education/7.jpg";
-import h from "../img/Education/8.jpg";
-import j from "../img/Education/9.jpg";
-import k from "../img/Education/10.jpg";
-import l from "../img/Education/11.jpg";
-import m from "../img/Education/12.jpg";
+import a from "../img/computer/1.jpg";
+import b from "../img/computer/2.jpg";
+import c from "../img/computer/3.jpg";
+import d from "../img/computer/4.jpg";
+import e from "../img/computer/5.jpg";
+import f from "../img/computer/6.jpg";
+import g from "../img/computer/7.jpg";
+import h from "../img/computer/8.jpg";
+import j from "../img/computer/9.jpg";
+import k from "../img/computer/10.jpg";
+import l from "../img/computer/11.jpg";
+import m from "../img/computer/12.jpg";
 
 const Edata = [
   {

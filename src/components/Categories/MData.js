@@ -1,15 +1,15 @@
-import a from "../img/Food/1.jpg";
-import b from "../img/Food/2.jpg";
-import c from "../img/Food/3.jpg";
-import d from "../img/Food/4.jpg";
-import e from "../img/Food/5.jpg";
-import f from "../img/Food/6.jpg";
-import g from "../img/Food/7.jpg";
-import h from "../img/Food/8.jpg";
-import j from "../img/Food/9.jpg";
-import k from "../img/Food/10.jpg";
-import l from "../img/Food/11.jpg";
-import m from "../img/Food/12.jpg";
+import a from "../img/Media/1.jpg";
+import b from "../img/Media/2.jpg";
+import c from "../img/Media/3.jpg";
+import d from "../img/Media/4.jpg";
+import e from "../img/Media/5.jpg";
+import f from "../img/Media/6.jpg";
+import g from "../img/Media/7.jpg";
+import h from "../img/Media/8.jpg";
+import j from "../img/Media/9.jpg";
+import k from "../img/Media/10.jpg";
+import l from "../img/Media/11.jpg";
+import m from "../img/Media/12.jpg";
 
 const Fdata = [
   {

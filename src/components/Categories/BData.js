@@ -1,15 +1,16 @@
-import a from "../img/Bussiness/1.jpg";
-import b from "../img/Bussiness/2.jpg";
-import c from "../img/Bussiness/3.jpg";
-import d from "../img/Bussiness/4.jpg";
-import e from "../img/Bussiness/5.jpg";
-import f from "../img/Bussiness/6.jpg";
-import g from "../img/Bussiness/7.jpg";
-import h from "../img/Bussiness/8.jpg";
-import j from "../img/Bussiness/9.jpg";
-import k from "../img/Bussiness/10.jpg";
-import l from "../img/Bussiness/11.jpg";
-import m from "../img/Bussiness/12.jpg";
+import a from "../img/business/1.jpg";
+import b from "../img/business/2.jpg";
+import c from "../img/business/3.jpg";
+import d from "../img/business/4.jpg";
+import e from "../img/business/5.jpg";
+import f from "../img/business/6.jpg";
+import g from "../img/business/7.jpg";
+import h from "../img/business/8.jpg";
+import j from "../img/business/9.jpg";
+import k from "../img/business/10.jpg";
+import l from "../img/business/11.jpg";
+import m from "../img/business/12.jpg";
+
 
 const Bdata = [
   {

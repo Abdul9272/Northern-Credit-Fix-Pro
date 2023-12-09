@@ -1,15 +1,15 @@
-import a from "../img/Tourest/1.jpg";
-import b from "../img/Tourest/2.jpg";
-import c from "../img/Tourest/3.jpg";
-import d from "../img/Tourest/4.jpg";
-import e from "../img/Tourest/5.jpg";
-import f from "../img/Tourest/6.jpg";
-import g from "../img/Tourest/7.jpg";
-import h from "../img/Tourest/8.jpg";
-import j from "../img/Tourest/9.jpg";
-import k from "../img/Tourest/10.jpg";
-import l from "../img/Tourest/11.jpg";
-import m from "../img/Tourest/12.jpg";
+import a from "../img/wedding/1.jpg";
+import b from "../img/wedding/2.jpg";
+import c from "../img/wedding/3.jpg";
+import d from "../img/wedding/4.jpg";
+import e from "../img/wedding/5.jpg";
+import f from "../img/wedding/6.jpg";
+import g from "../img/wedding/7.jpg";
+import h from "../img/wedding/8.jpg";
+import j from "../img/wedding/9.jpg";
+import k from "../img/wedding/10.jpg";
+import l from "../img/wedding/11.jpg";
+import m from "../img/wedding/12.jpg";
 
 const Tdata = [
   {

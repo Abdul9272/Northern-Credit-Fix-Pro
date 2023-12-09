@@ -1,6 +1,6 @@
 
 import React,{useEffect,useRef} from "react";
-import Sdata from "./BData";
+import Sdata from "./LData";
 import Card from "./Card";
 
 function Law() {

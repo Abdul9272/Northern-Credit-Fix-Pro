@@ -1,6 +1,6 @@
 
 import React,{useEffect,useRef} from "react";
-import Sdata from "./EData";
+import Sdata from "./MData";
 import Card from "./Card";
 
 function Media() {
@@ -28,6 +28,8 @@ function Media() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}

@@ -15,7 +15,6 @@ import "./App.css";
 import Footers from "./components/Footer/Footers";
 import Business from "./components/Categories/Business";
 import Education from "./components/Categories/Education";
-import Food from "./components/Categories/Food";
 import Industry from "./components/Categories/Industry";
 import Law from "./components/Categories/Law";
 import AI from "./components/AI/Artifical";
@@ -117,12 +116,7 @@ function App() {
 
             <Footers />
           </Route>
-          <Route exact path="/food">
-            <Navbar />
-            <Food />
-
-            <Footers />
-          </Route>
+          
           <Route exact path="/industry">
             <Navbar />
             <Industry />

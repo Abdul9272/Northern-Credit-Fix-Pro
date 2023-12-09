@@ -1,6 +1,6 @@
 
 import React,{useEffect,useRef} from "react";
-import Sdata from "./LData";
+import Sdata from "./WData";
 import Card from "./Card";
 
 function Wedding() {
@@ -28,6 +28,8 @@ function Wedding() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}

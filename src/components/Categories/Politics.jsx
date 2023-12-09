@@ -1,5 +1,5 @@
 import React,{useEffect,useRef} from "react";
-import LData from "./LData";
+import LData from "./PData";
 import Card from "./Card";
 
 function Politics() {
@@ -27,6 +27,8 @@ function Politics() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}

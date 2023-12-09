@@ -1,6 +1,6 @@
 
 import React,{useRef,useEffect} from "react";
-import Sdata from "./TData";
+import Sdata from "./RData";
 import Card from "./Card";
 
 function RealEstate() {
@@ -28,6 +28,8 @@ function RealEstate() {
                     imgscr={val.imgscr}
                     title={val.title}
                     des={val.des}
+                    link={val.link}
+                    dlink={val.dlink}
                   />
                 );
               })}

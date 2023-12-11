@@ -39,27 +39,43 @@ function ShowTemp(props) {
           <div className="col-10 mx-auto">
             <div className="row gy-4">
               <div className="col-md-4 col-10 mx-auto">
-        <div className="card" style={{cursor:"pointer", height: "440px", overflow: "hidden" }}>
-          <img
-            src={img}
-            className="card-img-top"
-            alt="img"
-            style={{ objectFit: "cover", height: "200px", width: "100%" }}
-          />
-          <div
-            className="card-body"
-            style={{ height: "200px", overflow: "hidden" }}
-          >
-            <h5 className="card-title font-weight-bold">{title}</h5>
-            <p className="card-text" style={{ textAlign: "justify" }}>
-              {des}
-            </p>
-          </div>
-        </div>
-            <a href= {dlink} className="btn btn-primary w-100 text-center">
-              download Zip File
-            </a>
-            <a onClick={openModal} className="btn btn-primary w-100 text-center">Live Demo</a>
+                <div
+                  className="card"
+                  style={{
+                    cursor: "pointer",
+                    height: "440px",
+                    overflow: "hidden",
+                  }}
+                >
+                  <img
+                    src={img}
+                    className="card-img-top"
+                    alt="img"
+                    style={{
+                      objectFit: "cover",
+                      height: "200px",
+                      width: "100%",
+                    }}
+                  />
+                  <div
+                    className="card-body"
+                    style={{ height: "200px", overflow: "hidden" }}
+                  >
+                    <h5 className="card-title font-weight-bold">{title}</h5>
+                    <p className="card-text" style={{ textAlign: "justify" }}>
+                      {des}
+                    </p>
+                  </div>
+                </div>
+                <a href={dlink} className="btn btn-primary w-100 text-center">
+                  download Zip File
+                </a>
+                <a
+                  onClick={openModal}
+                  className="btn btn-primary w-100 text-center"
+                >
+                  Live Demo
+                </a>
                 {isModalOpen && (
                   <div className="modal">
                     <div className="modal-content">
@@ -69,20 +85,29 @@ function ShowTemp(props) {
                       <p className="template-title">{title} Template Demo</p>
                       <iframe
                         title={title}
-                        style={{ width: "100%", height: "100%", border: "none" }}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          border: "none",
+                        }}
                         src={link}
                       ></iframe>
                     </div>
                   </div>
                 )}
-            {/* <a href= {link} target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
+                {/* <a href= {link} target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
               PreView of Template
             </a> */}
-            {/* <a href= '/editor' target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
-              Edit a Template
-            </a> */}
+                <a
+                  href="/live_editor"
+                  target="_blank"
+                  rel="noopener norferrer"
+                  className="btn btn-primary w-100 text-center"
+                >
+                  Edit a Template
+                </a>
 
-        {/* <div className="card">
+                {/* <div className="card">
           <img src={props.imgscr} className="card-img-top" alt="img" />
           <div className="card-body">
             <h5 className="card-title font-weight-bold">{props.title}</h5>
@@ -93,10 +118,14 @@ function ShowTemp(props) {
             
           </div>
         </div> */}
-      </div>
+              </div>
 
               <div className="center-img col-lg-6 order-1 order-lg-2 header-img">
-                <img src={web} className="img-fluid animated img-size" alt="img" />
+                <img
+                  src={web}
+                  className="img-fluid animated img-size"
+                  alt="img"
+                />
               </div>
             </div>
           </div>
@@ -149,48 +178,54 @@ function ShowTemp(props) {
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
                   <img src={car} className="img-fluids animated" alt="img" />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-     
+
       {/* //-------------------- */}
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              <h4 style={{ fontWeight: "bold" }}> Free CSS does not publish or accept the following:</h4>
+              <h4 style={{ fontWeight: "bold" }}>
+                {" "}
+                Free CSS does not publish or accept the following:
+              </h4>
               <div className="rows">
                 <ul>
-                <li>  Table based templates</li>
-                <li>  Pre-built Blog templates</li>
-                <li>  Pre-built Content management system templates</li>
-                <li>  Pre-built E-Commerce templates</li>
-                <li>  Template that are clearly from other developers that have had minor changes made to them</li>
-                <li>  Templates that are based upon one design and images have only changed, creating a line or templates that have no changes to the CSS or XHTML.</li>
+                  <li> Table based templates</li>
+                  <li> Pre-built Blog templates</li>
+                  <li> Pre-built Content management system templates</li>
+                  <li> Pre-built E-Commerce templates</li>
+                  <li>
+                    {" "}
+                    Template that are clearly from other developers that have
+                    had minor changes made to them
+                  </li>
+                  <li>
+                    {" "}
+                    Templates that are based upon one design and images have
+                    only changed, creating a line or templates that have no
+                    changes to the CSS or XHTML.
+                  </li>
                 </ul>
-
-             
               </div>
-
             </div>
           </div>
         </div>
       </div>
 
       <div className="center container-fluid nav_bg">
-      <div className="row">
-        <div className="col-10 mx-auto">
-        <div  className="col-lg-6  order-1 order-lg-2 header-img">
-                <img src={me} className="img-fluid animated" alt="img" />
-              </div>
-          
+        <div className="row">
+          <div className="col-10 mx-auto">
+            <div className="col-lg-6  order-1 order-lg-2 header-img">
+              <img src={me} className="img-fluid animated" alt="img" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-     
     </>
   );
 }

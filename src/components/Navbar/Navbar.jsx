@@ -157,7 +157,7 @@ function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item1">
                 <Link
                   activeclassname="menu-active"
                   className={`nav-link ${

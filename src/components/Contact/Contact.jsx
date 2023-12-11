@@ -2,9 +2,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { useState } from "react";
 import web from "../img/register.svg";
 import "./contact.css";
 import "./contact1.css";
+import axios from "axios"
 
 // import web from "../img/register.svg";
 import and from '../img/atomo.jpg';
@@ -12,6 +14,36 @@ import car from '../img/comp.webp';
 import me from '../img/WhatsApp Image 2023-10-14 at 11.12.54_32a77485.jpg';
 
 function Contact() {
+
+  const [email, setEmail] = useState();
+  const [name, setName] = useState();
+  const [phone, setPhone] = useState();
+  const [text, setText] = useState();
+
+
+
+  // async function submit1(e){
+  //   e.preventDefault();
+
+  //   try{
+  //     await axios.post("http://localhost:8000/contact",{email,name,phone,text}
+  //     ).then(res=>{
+  //       alert("submitted")
+       
+       
+  //     }).catch(e=>{
+  //         alert("wrong details2")
+  //         alert("ui")
+  //         console.log(e);
+  //     })
+
+  //   }
+  //   catch(e){
+  //             console.log(e);
+
+  //   }
+  // }
+
   return (
     <>
       <section id="header" className="d-flex">
@@ -29,6 +61,8 @@ function Contact() {
                         Contact Us
                       </h2>
                       <input
+                        name="email"
+                        onChange={(e)=>{setEmail(e.target.value)}}
                         type="email"
                         className="form-control"
                         id="exampleFormControlInput1"
@@ -38,6 +72,8 @@ function Contact() {
                     <div className="mb-3">
                       <input
                         type="Text"
+                        name="name"
+                        onChange={(e)=>{setName(e.target.value)}}
                         className="form-control"
                         id="exampleFormControlInput1"
                         placeholder="Your Name "
@@ -46,6 +82,8 @@ function Contact() {
                     <div className="mb-3">
                       <input
                         type="Text"
+                        name="phone"
+                        onChange={(e)=>{setPhone(e.target.value)}}
                         className="form-control"
                         id="exampleFormControlInput1"
                         placeholder="Your Phone No"
@@ -54,6 +92,8 @@ function Contact() {
                     <div className="mb-3">
                       <textarea
                         className="form-control"
+                        onChange={(e)=>{setText(e.target.value)}}
+                        name="text"
                         id="exampleFormControlTextarea1"
                         rows="3"
                         placeholder="Your Message"

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Sdata from "./Sdata";
+import Sdata from "../Home/Hdata";
 import Card from "./Card";
 import "./service.css";
 

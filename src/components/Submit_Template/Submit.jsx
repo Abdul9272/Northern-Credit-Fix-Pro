@@ -96,7 +96,7 @@ function Submit() {
               <div className="rows">
                 <span>
                   If you would like to submit your free CSS templates simply
-                  send us an email to "info AT free-css.com", with a link to the
+                  send us an email to "info AT ThemeZone.com", with a link to the
                   templates demo page, and a link to where we can download the
                   zip file. Please note - please do not send us the downloadable
                   file directly via email, all templates are evaluated by Free
@@ -118,7 +118,7 @@ function Submit() {
               <div className="rows">
                 <span>
                   If you would like to submit your free CSS templates simply
-                  send us an email to "info AT free-css.com", with a link to the
+                  send us an email to "info AT ThemeZone.com", with a link to the
                   templates demo page, and a link to where we can download the
                   zip file. Please note - please do not send us the downloadable
                   file directly via email, all templates are evaluated by Free

@@ -3,7 +3,7 @@ import "./home1.css";
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import Card from "./Card";
-import Sdata from "../Services/Sdata";
+import Sdata from "./Hdata";
 
 function Home1() {
   

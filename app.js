@@ -60,6 +60,35 @@ app.post("/signup",async(req,res)=>{
 
 })
 
+// app.post("/contact",async(req,res)=>{
+//     const{email,name,phone,text}=req.body
+//     // console.log(email,name,phone,text)
+      
+//     const data={
+//         email:email,
+//         name:name,
+//         phone:phone,
+//         text:text
+//     }
+
+//     try{
+//         const check=await collection1.findOne({email:email})
+
+//         if(check){
+//             res.json("exist")
+//         }
+//         else{
+//             res.json("notexist")
+//             await collection1.insertMany([data])
+//         }
+
+//     }
+//     catch(e){
+//         res.json("fail")
+//     }
+
+// })
+
 app.listen(8000,()=>{
     console.log("port connected");
 })

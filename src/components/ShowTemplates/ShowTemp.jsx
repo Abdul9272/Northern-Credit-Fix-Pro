@@ -74,7 +74,7 @@ function ShowTemp(props) {
                   onClick={openModal}
                   className="btn btn-primary w-100 text-center"
                 >
-                  Live Demo
+                  Preview Template
                 </a>
                 {isModalOpen && (
                   <div className="modal">
@@ -99,14 +99,38 @@ function ShowTemp(props) {
               PreView of Template
             </a> */}
                 <a
-                  href="/live_editor"
+                  href="/editior"
                   target="_blank"
                   rel="noopener norferrer"
                   className="btn btn-primary w-100 text-center"
                 >
                   Edit a Template
                 </a>
-
+                {/* <a
+                  onClick={openModal}
+                  className="btn btn-primary w-100 text-center"
+                >
+                  Edit Template
+                </a>
+                {isModalOpen && (
+                  <div className="modal">
+                    <div className="modal-content">
+                      <span className="close" onClick={closeModal}>
+                        &times;
+                      </span>
+                      <p className="template-title">EDitor</p>
+                      <iframe
+                        title={title}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          border: "none",
+                        }}
+                        src='https://codepen.io/Marshjek/pen/KQZVBQ'
+                      ></iframe>
+                    </div>
+                  </div>
+                )} */}
                 {/* <div className="card">
           <img src={props.imgscr} className="card-img-top" alt="img" />
           <div className="card-body">
@@ -117,7 +141,7 @@ function ShowTemp(props) {
             </p>
             
           </div>
-        </div> */}
+                      </div> */}
               </div>
 
               <div className="center-img col-lg-6 order-1 order-lg-2 header-img">

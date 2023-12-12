@@ -34,6 +34,7 @@ import E_Commerence from "./components/Categories/EComm";
 
 import Healths from "./components/Categories/Healths";
 import Transport from "./components/Categories/Transport";
+import Editor from "./components/ShowTemplates/Editor";
 
 function App() {
   return (
@@ -199,6 +200,13 @@ function App() {
           <Route exact path="/showtemp">
             <Navbar />
             <ShowTemp />
+
+            <Footers />
+          </Route>
+
+          <Route exact path="/editior">
+            <Navbar />
+            <Editor />
 
             <Footers />
           </Route>

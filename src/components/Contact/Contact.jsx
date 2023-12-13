@@ -54,13 +54,13 @@ const Contact = () => {
                       >
                         Contact Us
                       </h2>
-                  <label>Name</label>
+                  <label className="contact_label">Name</label>
                   <input type="text" name="User_Name" required />
-                  <label>Email</label>
+                  <label className="contact_label">Email</label>
                   <input type="email" name="User_Email" required />
-                  <label>Subject</label>
+                  <label className="contact_label">Subject</label>
                   <input type="text" name="User_Subject" required />
-                  <label>Message</label>
+                  <label className="contact_label">Message</label>
                   <textarea name="User_Msg" />
                   <input type="submit" value="Send" />
                  

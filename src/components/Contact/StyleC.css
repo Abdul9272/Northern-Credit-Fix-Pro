@@ -38,8 +38,12 @@
       }
     }
 
-    label {
+    .contact_label {
       margin-top: 1rem;
+      margin-left: -522px;
+      margin-right: 0;
+      
+      
     }
 
     input[type="submit"] {

@@ -170,7 +170,7 @@ const Editor = () => {
   return (
     <div className="container-f">
       <div className="left">
-        <label>
+        <label className="edit_label">
           <FaHtml5 className="i" />
           HTML
         </label>
@@ -179,7 +179,7 @@ const Editor = () => {
           value={htmlCode}
           onChange={(e) => setHtmlCode(e.target.value)}
         ></textarea>
-        <label>
+        <label className="edit_label">
           <IoLogoCss3 className="i" />
           CSS
         </label>
@@ -188,7 +188,7 @@ const Editor = () => {
           value={cssCode}
           onChange={(e) => setCssCode(e.target.value)}
         ></textarea>
-        <label>
+        <label className="edit_label">
           <TbBrandJavascript className="i" />
           JS
         </label>
@@ -215,7 +215,7 @@ const Editor = () => {
         <button className="run btn-get-started" onClick={run}>
           Run
         </button>
-        <label onClick={run}>
+        <label className="edit_label" onClick={run}>
           <VscRunAll className="i" /> Output
         </label>
 

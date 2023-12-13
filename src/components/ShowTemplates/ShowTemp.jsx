@@ -98,14 +98,14 @@ function ShowTemp(props) {
                 {/* <a href= {link} target="_blank" rel="noopener norferrer" className="btn btn-primary w-100 text-center">
               PreView of Template
             </a> */}
-                <a
+                {/* <a
                   href="/editior"
                   target="_blank"
                   rel="noopener norferrer"
                   className="btn btn-primary w-100 text-center"
                 >
                   Edit a Template
-                </a>
+                </a> */}
                 {/* <a
                   onClick={openModal}
                   className="btn btn-primary w-100 text-center"

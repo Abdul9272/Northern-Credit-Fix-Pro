@@ -19,7 +19,7 @@ function Home() {
       ) : (
         <p>Loading...</p>
       )} */}
-      <h1 className="a">Hello! ALI and welcome to the home Page</h1>
+      <h1 className="a">Hello! Abdul Rehman and welcome to the home Page</h1>
       <Common
         name="Grow your business with"
         imgscr={web}

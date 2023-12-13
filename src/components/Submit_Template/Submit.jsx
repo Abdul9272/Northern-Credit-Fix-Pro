@@ -59,13 +59,13 @@ const Submit = () => {
                     >
                     Submit a Template
                     </h2>
-                    <label>Name</label>
+                    <label className="submit_label">Name</label>
                     <input type="text" name="User_Name" required />
-                    <label>Email</label>
+                    <label className="submit_label">Email</label>
                     <input type="email" name="User_Email" required />
-                    <label>Title</label>
+                    <label className="submit_label">Title</label>
                     <input type="text" name="T_Title" required />
-                    <label>Description</label>
+                    <label className="submit_label">Description</label>
                     <textarea name="User_Msg" />
                     <label htmlFor="attachment">Attachment (zip file):</label>
                     <input

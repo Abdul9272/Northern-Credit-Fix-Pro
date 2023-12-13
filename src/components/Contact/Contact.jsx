@@ -1,112 +1,71 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// sendForm("service_hccldgk", "template_bnklhpe", form.current, "REcdWeNHNTi3-jYWs")
 
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import styled from "styled-components";
+// import "./contact1.css";
+import "./StyleC.css";
+
 import web from "../img/register.svg";
-import "./contact.css";
-import "./contact1.css";
-import axios from "axios"
-
-// import web from "../img/register.svg";
+// npm i @emailjs/browser
 import and from '../img/atomo.jpg';
 import car from '../img/comp.webp';
 import me from '../img/WhatsApp Image 2023-10-14 at 11.12.54_32a77485.jpg';
+import "./contact.css";
+import "./contact1.css";
 
-function Contact() {
+const Contact = () => {
+  const form = useRef();
 
-  const [email, setEmail] = useState();
-  const [name, setName] = useState();
-  const [phone, setPhone] = useState();
-  const [text, setText] = useState();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-
-
-  // async function submit1(e){
-  //   e.preventDefault();
-
-  //   try{
-  //     await axios.post("http://localhost:8000/contact",{email,name,phone,text}
-  //     ).then(res=>{
-  //       alert("submitted")
-       
-       
-  //     }).catch(e=>{
-  //         alert("wrong details2")
-  //         alert("ui")
-  //         console.log(e);
-  //     })
-
-  //   }
-  //   catch(e){
-  //             console.log(e);
-
-  //   }
-  // }
+    emailjs
+      .sendForm(
+        "service_hccldgk",
+        "template_bnklhpe",
+        form.current,
+        "REcdWeNHNTi3-jYWs"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
+
     <>
-      <section id="header" className="d-flex">
+    <section id="header" className="d-flex">
         <div className="container-fluid nav_bg">
           <div className="row">
             <div className="col-10 mx-auto">
               <div className="row">
                 <div className="col-md-6 pt-5 pt-log-0 order-2 order-lg-1">
-                  <form>
-                    <div className="mb-3">
-                      <h2
+                <form ref={form} onSubmit={sendEmail}>
+                <h2
                         className="my-3"
                         style={{ fontWeight: "bold", textAlign: "center" }}
                       >
                         Contact Us
                       </h2>
-                      <input
-                        name="email"
-                        onChange={(e)=>{setEmail(e.target.value)}}
-                        type="email"
-                        className="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Enter Your Email..."
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <input
-                        type="Text"
-                        name="name"
-                        onChange={(e)=>{setName(e.target.value)}}
-                        className="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Your Name "
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <input
-                        type="Text"
-                        name="phone"
-                        onChange={(e)=>{setPhone(e.target.value)}}
-                        className="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Your Phone No"
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <textarea
-                        className="form-control"
-                        onChange={(e)=>{setText(e.target.value)}}
-                        name="text"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Your Message"
-                      ></textarea>
-                    </div>
-                  </form>
-
-                  
-                  <div className="mt-3 d-flex justify-content-center">
-                    <Link to="/" className="w-50 btn_ btn-get-started">
-                        Submit
-                    </Link>
-                  </div>
+                  <label>Name</label>
+                  <input type="text" name="User_Name" required />
+                  <label>Email</label>
+                  <input type="email" name="User_Email" required />
+                  <label>Subject</label>
+                  <input type="text" name="User_Subject" required />
+                  <label>Message</label>
+                  <textarea name="User_Msg" />
+                  <input type="submit" value="Send" />
+                 
+                </form>
+               
                 </div>
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
                   <img
@@ -114,12 +73,13 @@ function Contact() {
                     className="img-fluid animated"
                     alt="About img"
                   />
-                </div>
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <hr/>
 
       <div className="container-fluid mb-5">
@@ -209,7 +169,11 @@ function Contact() {
       </div>
     </div>
     </>
+
+      
+   
+      
   );
-}
+};
 
 export default Contact;

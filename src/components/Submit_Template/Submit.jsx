@@ -1,83 +1,85 @@
-import React from "react";
 import Sdata from "../Categories/TData";
 import Card from "./Card";
 import log from "../img/log.svg";
-import web from '../img/register.svg'
-import and from '../img/atomo.jpg';
-import car from '../img/comp.webp';
-import me from '../img/huza.jpg';
+
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 // import web from "../img/register.svg";
 
-
 import "./submit.css";
 
-function Submit() {
+// sendForm("service_hccldgk", "template_bnklhpe", form.current, "REcdWeNHNTi3-jYWs")
+
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import styled from "styled-components";
+// import "./contact1.css";
+
+import web from "../img/register.svg";
+// npm i @emailjs/browser
+import and from "../img/atomo.jpg";
+import car from "../img/comp.webp";
+import me from "../img/WhatsApp Image 2023-10-14 at 11.12.54_32a77485.jpg";
+
+const Submit = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_hccldgk",
+        "template_bnklhpe",
+        form.current,
+        "REcdWeNHNTi3-jYWs"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
-      <div className="my-5 " id="services">
-        <h1 className="text-center" style={{ fontWeight: "bold" }}>
-          Submit A Templates
-        </h1>
-      </div>
-      
       <section id="header" className="d-flex">
         <div className="container-fluid nav_bg">
           <div className="row">
             <div className="col-10 mx-auto">
               <div className="row">
                 <div className="col-md-6 pt-5 pt-log-0 order-2 order-lg-1">
-                  <form>
-                    <div className="mb-3">
-                      <h2
-                        className="my-5"
-                        style={{ fontWeight: "bold", textAlign: "center" }}
-                      >
-                        Fill This Form
-                      </h2>
-                      <input
-                        type="Text"
-                        className="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Template Title"
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <input
-                        type="Text"
-                        className="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Template Category "
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <input
-                        type="email"
-                        className="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Your Email"
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <textarea
-                        className="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Template Description"
-                      ></textarea>
-                    </div>
+                  <form ref={form} onSubmit={sendEmail}>
+                    <h2
+                      className="my-3"
+                      style={{ fontWeight: "bold", textAlign: "center" }}
+                    >
+                    Submit a Template
+                    </h2>
+                    <label>Name</label>
+                    <input type="text" name="User_Name" required />
+                    <label>Email</label>
+                    <input type="email" name="User_Email" required />
+                    <label>Title</label>
+                    <input type="text" name="T_Title" required />
+                    <label>Description</label>
+                    <textarea name="User_Msg" />
+                    <label htmlFor="attachment">Attachment (zip file):</label>
+                    <input
+                      type="file"
+                      id="attachment"
+                      name="attachment"
+                      accept=".zip"
+                    />
+                    <input type="submit" value="Send" />
                   </form>
-
-                  
-                  <div className="mt-3 d-flex justify-content-center">
-                    <Link to="/" className="w-50 btn_ btn-get-started">
-                        Submit Template
-                    </Link>
-                  </div>
                 </div>
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
                   <img
-                    src={log}
+                    src={web}
                     className="img-fluid animated"
                     alt="About img"
                   />
@@ -96,17 +98,17 @@ function Submit() {
               <div className="rows">
                 <span>
                   If you would like to submit your free CSS templates simply
-                  send us an email to "info AT ThemeZone.com", with a link to the
-                  templates demo page, and a link to where we can download the
-                  zip file. Please note - please do not send us the downloadable
-                  file directly via email, all templates are evaluated by Free
-                  CSS and if it/they fulfill all guidelines it/they will then be
-                  placed into the waiting list to be published. Free CSS does
-                  not guarantee submission and therefore reserve the right to
-                  publish or reject any templates that are submitted. Free CSS
-                  showcases straight HTML templates that can be converted/ported
-                  into various systems such as Blogging software, E-commerce
-                  software, CMS systems etc..
+                  send us an email to "info AT ThemeZone.com", with a link to
+                  the templates demo page, and a link to where we can download
+                  the zip file. Please note - please do not send us the
+                  downloadable file directly via email, all templates are
+                  evaluated by Free CSS and if it/they fulfill all guidelines
+                  it/they will then be placed into the waiting list to be
+                  published. Free CSS does not guarantee submission and
+                  therefore reserve the right to publish or reject any templates
+                  that are submitted. Free CSS showcases straight HTML templates
+                  that can be converted/ported into various systems such as
+                  Blogging software, E-commerce software, CMS systems etc..
                 </span>
 
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
@@ -118,48 +120,56 @@ function Submit() {
               <div className="rows">
                 <span>
                   If you would like to submit your free CSS templates simply
-                  send us an email to "info AT ThemeZone.com", with a link to the
-                  templates demo page, and a link to where we can download the
-                  zip file. Please note - please do not send us the downloadable
-                  file directly via email, all templates are evaluated by Free
-                  CSS and if it/they fulfill all guidelines it/they will then be
-                  placed into the waiting list to be published. Free CSS does
-                  not guarantee submission and therefore reserve the right to
-                  publish or reject any templates that are submitted. Free CSS
-                  showcases straight HTML templates that can be converted/ported
-                  into various systems such as Blogging software, E-commerce
-                  software, CMS systems etc..
+                  send us an email to "info AT ThemeZone.com", with a link to
+                  the templates demo page, and a link to where we can download
+                  the zip file. Please note - please do not send us the
+                  downloadable file directly via email, all templates are
+                  evaluated by Free CSS and if it/they fulfill all guidelines
+                  it/they will then be placed into the waiting list to be
+                  published. Free CSS does not guarantee submission and
+                  therefore reserve the right to publish or reject any templates
+                  that are submitted. Free CSS showcases straight HTML templates
+                  that can be converted/ported into various systems such as
+                  Blogging software, E-commerce software, CMS systems etc..
                 </span>
 
                 <div className="col-lg-6 order-1 order-lg-2 header-img">
                   <img src={car} className="img-fluids animated" alt="img" />
                 </div>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-     
+
       {/* //-------------------- */}
       <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
             <div className="row gy-4">
-              <h4 style={{ fontWeight: "bold" }}> ThemeZone does not publish or accept the following:</h4>
+              <h4 style={{ fontWeight: "bold" }}>
+                {" "}
+                ThemeZone does not publish or accept the following:
+              </h4>
               <div className="rows">
                 <ul>
-                <li>  Table based templates</li>
-                <li>  Pre-built Blog templates</li>
-                <li>  Pre-built Content management system templates</li>
-                <li>  Pre-built E-Commerce templates</li>
-                <li>  Template that are clearly from other developers that have had minor changes made to them</li>
-                <li>  Templates that are based upon one design and images have only changed, creating a line or templates that have no changes to the CSS or XHTML.</li>
+                  <li> Table based templates</li>
+                  <li> Pre-built Blog templates</li>
+                  <li> Pre-built Content management system templates</li>
+                  <li> Pre-built E-Commerce templates</li>
+                  <li>
+                    {" "}
+                    Template that are clearly from other developers that have
+                    had minor changes made to them
+                  </li>
+                  <li>
+                    {" "}
+                    Templates that are based upon one design and images have
+                    only changed, creating a line or templates that have no
+                    changes to the CSS or XHTML.
+                  </li>
                 </ul>
-
-             
               </div>
-
             </div>
           </div>
         </div>
@@ -176,12 +186,12 @@ function Submit() {
       </div>
     </div>
       */}
-       <div className="container-fluid mb-5">
+      <div className="container-fluid mb-5">
         <div className="row">
           <div className="col-10 mx-auto">
-          <h4 style={{ fontWeight: "bold" }}>TEMPLATE SAMPLE</h4>
+            <h4 style={{ fontWeight: "bold" }}>TEMPLATE SAMPLE</h4>
             <div className="row gy-4 mt-5">
-              {Sdata.slice(0,3).map((val, ind) => {
+              {Sdata.slice(0, 3).map((val, ind) => {
                 return (
                   <Card
                     key={ind}
@@ -197,6 +207,6 @@ function Submit() {
       </div>
     </>
   );
-}
+};
 
 export default Submit;

@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./edit.css";
 import FileExplorer from "./FileExplore";
 import JSZip from "jszip";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io5";
+import { TbBrandJavascript } from "react-icons/tb";
+import { VscRunAll } from "react-icons/vsc";
 
 const Editor = () => {
   const [files, setFiles] = useState([
@@ -166,19 +170,28 @@ const Editor = () => {
   return (
     <div className="container-f">
       <div className="left">
-        <label>HTML</label>
+        <label>
+          <FaHtml5 className="i" />
+          HTML
+        </label>
         <textarea
           id="html-code"
           value={htmlCode}
           onChange={(e) => setHtmlCode(e.target.value)}
         ></textarea>
-        <label>CSS</label>
+        <label>
+          <IoLogoCss3 className="i" />
+          CSS
+        </label>
         <textarea
           id="css-code"
           value={cssCode}
           onChange={(e) => setCssCode(e.target.value)}
         ></textarea>
-        <label>JS</label>
+        <label>
+          <TbBrandJavascript className="i" />
+          JS
+        </label>
         <textarea
           id="js-code"
           value={jsCode}
@@ -186,19 +199,30 @@ const Editor = () => {
         ></textarea>
         <FileExplorer files={files} onFileClick={onFileClick} />
         {/* Add a button and file input for loading zip files */}
-        <label>Load Zip File</label>
-        <input type="file" accept=".zip" onChange={handleFileChange} />
+        <input
+          className="input-load"
+          type="file"
+          accept=".zip"
+          onChange={handleFileChange}
+        />
         {/* Add a "Run" button for live editing */}
-        <button onClick={run}>Run</button>
         {/* Add a button for downloading the updated code */}
-        <button style={{marginLeft:'20px'}} onClick={downloadFiles}>Download</button>
       </div>
       <div className="right">
-        <label>Output</label>
+        <button className="download btn-get-started" onClick={downloadFiles}>
+          Download
+        </button>
+        <button className="run btn-get-started" onClick={run}>
+          Run
+        </button>
+        <label onClick={run}>
+          <VscRunAll className="i" /> Output
+        </label>
+
         <iframe title="output" id="output"></iframe>
       </div>
     </div>
   );
 };
 
-export default Editor;
+export default Editor;
